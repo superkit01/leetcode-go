@@ -12,6 +12,11 @@ import "fmt"
 //	Right *TreeNode
 //}
 
+/**
+	前序  根--左--右
+	中序  左--根--右
+	后序  左--右--根
+ */
 func inorderTraversal(root *TreeNode) []int {
 	result := make([]int, 0)
 	digui(root, &result)
@@ -22,8 +27,8 @@ func digui(root *TreeNode, result *[]int) {
 	if root == nil {
 		return
 	}
-	*result = append(*result, root.Val)
 	digui(root.Left, result)
+	*result = append(*result, root.Val)
 	digui(root.Right, result)
 }
 
