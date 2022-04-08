@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"sort"
 )
@@ -38,7 +37,7 @@ func insert(intervals [][]int, newInterval []int) [][]int {
 
 }
 
-func main() {
-	intervals := [][]int{{1, 5}}
-	fmt.Printf("%v \n", insert(intervals, []int{6, 8}))
-}
+//func main() {
+//	intervals := [][]int{{1, 5}}
+//	fmt.Printf("%v \n", insert(intervals, []int{6, 8}))
+//}
