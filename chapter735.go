@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -45,9 +44,4 @@ func compare(stack *[]int, v int) {
 		*stack = append(*stack, v)
 		return
 	}
-}
-
-func main() {
-	fmt.Printf("%v", asteroidCollision([]int{-2, -1, 1, 2}))
-
 }
