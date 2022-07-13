@@ -5,11 +5,11 @@ func hasPathSum(root *TreeNode, targetSum int) bool {
 		return false
 	}
 
-	return recusive(root, targetSum)
+	return recursive2(root, targetSum)
 
 }
 
-func recusive(node *TreeNode, remaining int) bool {
+func recursive2(node *TreeNode, remaining int) bool {
 	if node.Left == nil && node.Right == nil {
 		if node.Val == remaining {
 			return true
@@ -19,12 +19,12 @@ func recusive(node *TreeNode, remaining int) bool {
 	}
 
 	if node.Left != nil && node.Right == nil {
-		return recusive(node.Left, remaining-node.Val)
+		return recursive2(node.Left, remaining-node.Val)
 	}
 	if node.Right != nil && node.Left == nil {
-		return recusive(node.Right, remaining-node.Val)
+		return recursive2(node.Right, remaining-node.Val)
 	} else {
-		return recusive(node.Left, remaining-node.Val) || recusive(node.Right, remaining-node.Val)
+		return recursive2(node.Left, remaining-node.Val) || recursive2(node.Right, remaining-node.Val)
 	}
 
 }
