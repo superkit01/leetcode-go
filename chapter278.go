@@ -7,7 +7,9 @@ package main
  *			          false if current version is good
  *
  */
-func isBadVersion(version int) bool
+func isBadVersion(version int) bool {
+	return false
+}
 
 func firstBadVersion(n int) int {
 	l := 1
