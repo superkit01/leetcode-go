@@ -33,6 +33,6 @@ func wordPattern(pattern string, s string) bool {
 	return true
 }
 
-func main() {
-	wordPattern("abba", "cat dog dog cat")
-}
+// func main() {
+// 	wordPattern("abba", "cat dog dog cat")
+// }
