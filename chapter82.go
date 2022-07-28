@@ -38,7 +38,7 @@ func deleteDuplicates3(head *ListNode) *ListNode {
 
 }
 
-func main() {
-	temp := &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{3, &ListNode{4, &ListNode{4, &ListNode{5, nil}}}}}}}
-	deleteDuplicates3(temp)
-}
+// func main() {
+// 	temp := &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{3, &ListNode{4, &ListNode{4, &ListNode{5, nil}}}}}}}
+// 	deleteDuplicates3(temp)
+// }
