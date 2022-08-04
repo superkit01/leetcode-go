@@ -31,7 +31,7 @@ func minSubsequence(nums []int) []int {
 
 }
 
-func main() {
-	minSubsequence([]int{1})
+// func main() {
+// 	minSubsequence([]int{1})
 
-}
+// }
