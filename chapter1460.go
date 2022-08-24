@@ -2,7 +2,7 @@ package main
 
 func canBeEqual(target []int, arr []int) bool {
 	cache := make(map[int]int, 0)
-	for i, _ := range target {
+	for i := range target {
 		cache[target[i]]++
 		cache[arr[i]]--
 	}
