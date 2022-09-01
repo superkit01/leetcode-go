@@ -38,6 +38,6 @@ func frequencySort(nums []int) []int {
 	return result
 }
 
-func main() {
-	frequencySort([]int{1, 1, 2, 2, 2, 3})
-}
+// func main() {
+// frequencySort([]int{1, 1, 2, 2, 2, 3})
+// }
