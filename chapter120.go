@@ -34,7 +34,7 @@ func minimumTotal(triangle [][]int) int {
 
 }
 
-func main() {
+// func main() {
 
-	minimumTotal([][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}})
-}
+// 	minimumTotal([][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}})
+// }
