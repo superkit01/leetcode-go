@@ -61,6 +61,6 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 
 }
 
-func main() {
-	uniquePathsWithObstacles([][]int{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}})
-}
+// func main() {
+// 	uniquePathsWithObstacles([][]int{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}})
+// }
