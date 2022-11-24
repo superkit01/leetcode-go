@@ -21,9 +21,3 @@ func countBalls(lowLimit int, highLimit int) int {
 	}
 	return max
 }
-
-func main() {
-
-	countBalls(1, 10)
-
-}
