@@ -1,4 +1,4 @@
-package main
+package easy
 
 func numberOfLines(widths []int, s string) []int {
 	total := 0

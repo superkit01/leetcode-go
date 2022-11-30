@@ -1,4 +1,4 @@
-package main
+package easy
 
 func busyStudent(startTime []int, endTime []int, queryTime int) int {
 	result := 0

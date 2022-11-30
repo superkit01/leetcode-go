@@ -1,4 +1,4 @@
-package main
+package easy
 
 func minOperations(logs []string) int {
 	cache := make([]string, 0)

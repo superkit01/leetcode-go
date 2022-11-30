@@ -1,4 +1,4 @@
-package main
+package easy
 
 /**
  * Definition for a binary tree node.

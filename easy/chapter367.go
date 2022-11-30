@@ -1,4 +1,4 @@
-package main
+package easy
 
 func isPerfectSquare(num int) bool {
 	left := 1

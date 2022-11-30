@@ -1,4 +1,4 @@
-package main
+package easy
 
 func hasCycle(head *ListNode) bool {
 	cache := make(map[*ListNode]int)

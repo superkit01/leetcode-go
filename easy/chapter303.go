@@ -1,4 +1,4 @@
-package main
+package easy
 
 type NumArray struct {
 	nums    []int

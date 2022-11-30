@@ -1,4 +1,4 @@
-package main
+package easy
 
 func countBalls(lowLimit int, highLimit int) int {
 	cache := make(map[int]int)

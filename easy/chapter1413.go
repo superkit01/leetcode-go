@@ -1,4 +1,4 @@
-package main
+package easy
 
 func minStartValue(nums []int) int {
 	temp := 0

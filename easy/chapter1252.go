@@ -1,4 +1,4 @@
-package main
+package easy
 
 func oddCells(m int, n int, indices [][]int) int {
 	var row []int = make([]int, m)

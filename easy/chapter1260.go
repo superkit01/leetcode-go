@@ -1,4 +1,4 @@
-package main
+package easy
 
 func shiftGrid(grid [][]int, k int) [][]int {
 

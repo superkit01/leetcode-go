@@ -1,4 +1,4 @@
-package main
+package easy
 
 func fraction(cont []int) []int {
 	numerator := 1

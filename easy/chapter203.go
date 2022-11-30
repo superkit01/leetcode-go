@@ -1,4 +1,4 @@
-package main
+package easy
 
 func removeElements(head *ListNode, val int) *ListNode {
 	if head == nil {

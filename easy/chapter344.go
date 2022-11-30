@@ -1,4 +1,4 @@
-package main
+package easy
 
 func reverseString(s []byte) {
 	count := len(s)

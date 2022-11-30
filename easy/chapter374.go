@@ -1,4 +1,4 @@
-package main
+package easy
 
 /**
  * Forward declaration of guess API.

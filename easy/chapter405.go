@@ -1,4 +1,4 @@
-package main
+package easy
 
 var cache = map[int]string{
 	0:  "0",

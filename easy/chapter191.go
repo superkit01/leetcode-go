@@ -1,5 +1,4 @@
-package main
-
+package easy
 
 func hammingWeight(num uint32) int {
 	result := 0

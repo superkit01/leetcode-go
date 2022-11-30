@@ -1,4 +1,4 @@
-package main
+package easy
 
 type MyQueue struct {
 	stack1 []int

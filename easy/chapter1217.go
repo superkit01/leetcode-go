@@ -1,4 +1,4 @@
-package main
+package easy
 
 func minCostToMoveChips(position []int) int {
 	var oddSum int = 0

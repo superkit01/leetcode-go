@@ -1,4 +1,4 @@
-package main
+package easy
 
 func missingNumber(nums []int) int {
 	result := 0

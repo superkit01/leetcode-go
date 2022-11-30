@@ -1,4 +1,4 @@
-package main
+package easy
 
 func intersection(nums1 []int, nums2 []int) []int {
 	result := make([]int, 0)

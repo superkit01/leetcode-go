@@ -1,4 +1,4 @@
-package main
+package easy
 
 func convertToTitle(columnNumber int) string {
 	dict := map[int]string{

@@ -1,4 +1,4 @@
-package main
+package easy
 
 var Vowels = map[byte]bool{
 	'a': true,

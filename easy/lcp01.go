@@ -1,4 +1,4 @@
-package main
+package easy
 
 func game(guess []int, answer []int) int {
 	result := 0

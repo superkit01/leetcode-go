@@ -1,4 +1,4 @@
-package main
+package easy
 
 func reformat(s string) string {
 	charactorQueue := make([]rune, 0)

@@ -1,4 +1,4 @@
-package main
+package easy
 
 func findTheDifference(s string, t string) byte {
 	var result rune

@@ -1,4 +1,4 @@
-package main
+package easy
 
 func singleNumber(nums []int) int {
 	if len(nums) == 1 {

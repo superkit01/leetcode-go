@@ -1,4 +1,4 @@
-package main
+package easy
 
 func isUgly(n int) bool {
 	if n <= 0 {

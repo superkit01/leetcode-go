@@ -1,4 +1,4 @@
-package main
+package easy
 
 func longestPalindrome(s string) int {
 	cache := make(map[rune]int, 0)

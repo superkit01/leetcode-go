@@ -1,4 +1,4 @@
-package main
+package easy
 
 func reverseBits(num uint32) uint32 {
 	var result uint32 = 0

@@ -1,4 +1,4 @@
-package main
+package easy
 
 func nextGreatestLetter(letters []byte, target byte) byte {
 

@@ -1,4 +1,4 @@
-package main
+package easy
 
 func finalPrices(prices []int) []int {
 	if len(prices) == 1 {

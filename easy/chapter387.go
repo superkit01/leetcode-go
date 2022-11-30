@@ -1,4 +1,4 @@
-package main
+package easy
 
 func firstUniqChar(s string) int {
 	cache := make(map[rune]int)

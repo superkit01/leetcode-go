@@ -1,4 +1,4 @@
-package main
+package easy
 
 func checkXMatrix(grid [][]int) bool {
 	m := len(grid)

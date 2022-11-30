@@ -1,4 +1,4 @@
-package main
+package easy
 
 func majorityElement(nums []int) int {
 	counter := make(map[int]int, 0)

@@ -1,4 +1,4 @@
-package main
+package easy
 
 func countHillValley(nums []int) int {
 	temp := make([]int, 0)

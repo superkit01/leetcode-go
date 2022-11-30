@@ -1,4 +1,4 @@
-package main
+package easy
 
 func getRow(rowIndex int) []int {
 	temp := []int{1}

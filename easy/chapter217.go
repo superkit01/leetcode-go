@@ -1,4 +1,4 @@
-package main
+package easy
 
 func containsDuplicate(nums []int) bool {
 

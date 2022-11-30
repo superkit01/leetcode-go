@@ -1,4 +1,4 @@
-package main
+package easy
 
 func canBeEqual(target []int, arr []int) bool {
 	cache := make(map[int]int, 0)
