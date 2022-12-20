@@ -1,4 +1,4 @@
-package main
+package week
 
 func numberOfWays(s string) int64 {
 	count0 := 0
