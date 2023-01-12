@@ -24,6 +24,7 @@ func digui(preorder *[]int, inorder []int) *TreeNode {
 	for i := 0; i < len(inorder); i++ {
 		if inorder[i] == root {
 			index = i
+			break
 		}
 	}
 
