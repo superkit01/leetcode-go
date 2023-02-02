@@ -18,7 +18,7 @@ func closeStrings(word1 string, word2 string) bool {
 	if len(word1Map) != len(word2Map) {
 		return false
 	}
-	for k, _ := range word1Map {
+	for k := range word1Map {
 		if _, ok := word2Map[k]; !ok {
 			return false
 		}
