@@ -5,13 +5,5 @@ import (
 )
 
 func main() {
-	// middle.MinMoves2([]int{1, 10, 2, 9})
-	middle.AlphabetBoardPath("leet")
+	middle.OddEvenList(&middle.ListNode{1, &middle.ListNode{2, &middle.ListNode{3, &middle.ListNode{4, &middle.ListNode{5, nil}}}}})
 }
-
-/**
-[0,1,2]
-1
-1
-[1000000,1000001,1000002,1000003]
-*/
