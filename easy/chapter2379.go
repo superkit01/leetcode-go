@@ -15,7 +15,7 @@ func MinimumRecolors(blocks string, k int) int {
 		return curW
 	}
 
-	for i := 1; i < len(blocks)-k; i++ {
+	for i := 1; i <= len(blocks)-k; i++ {
 		if blocks[i-1] == 'W' {
 			curW--
 		}
