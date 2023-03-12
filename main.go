@@ -1,9 +1,8 @@
 package main
 
-import (
-	"leecode-go/easy"
-)
+import "leecode-go/week/week336"
 
 func main() {
-	easy.MinimumRecolors("WWBBBWBBBBBWWBWWWB", 16)
+
+	week336.BeautifulSubarrays([]int{4, 3, 1, 2, 4})
 }
