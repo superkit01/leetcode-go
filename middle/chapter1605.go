@@ -4,7 +4,7 @@ import "math"
 
 func restoreMatrix(rowSum []int, colSum []int) [][]int {
 	result := make([][]int, len(rowSum))
-	for i, _ := range result {
+	for i := range result {
 		result[i] = make([]int, len(colSum))
 	}
 outer:
