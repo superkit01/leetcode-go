@@ -19,4 +19,6 @@ func main() {
 	easy.ArithmeticTriplets([]int{0, 1, 4, 6, 7, 10}, 3)
 
 	middle.IsRobotBounded("GGLLGG")
+
+	middle.NumberOfWeakCharacters([][]int{{5, 5}, {6, 3}, {3, 6}, {4, 4}})
 }
