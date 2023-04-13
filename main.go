@@ -21,4 +21,6 @@ func main() {
 	middle.IsRobotBounded("GGLLGG")
 
 	middle.NumberOfWeakCharacters([][]int{{5, 5}, {6, 3}, {3, 6}, {4, 4}})
+
+	easy.MostFrequentEven([]int{0, 1, 2, 2, 4, 4, 1})
 }
