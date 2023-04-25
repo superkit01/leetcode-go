@@ -23,4 +23,8 @@ func main() {
 	middle.NumberOfWeakCharacters([][]int{{5, 5}, {6, 3}, {3, 6}, {4, 4}})
 
 	easy.MostFrequentEven([]int{0, 1, 2, 2, 4, 4, 1})
+	easy.SortPeople([]string{"IEO", "Sgizfdfrims", "QTASHKQ", "Vk", "RPJOFYZUBFSIYp", "EPCFFt", "VOYGWWNCf", "WSpmqvb"},
+		[]int{17233, 32521, 14087, 42738, 46669, 65662, 43204, 8224})
+		
+
 }
