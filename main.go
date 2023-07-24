@@ -25,6 +25,6 @@ func main() {
 	easy.MostFrequentEven([]int{0, 1, 2, 2, 4, 4, 1})
 	easy.SortPeople([]string{"IEO", "Sgizfdfrims", "QTASHKQ", "Vk", "RPJOFYZUBFSIYp", "EPCFFt", "VOYGWWNCf", "WSpmqvb"},
 		[]int{17233, 32521, 14087, 42738, 46669, 65662, 43204, 8224})
-		
 
+	middle.ReverseList(&middle.ListNode{Val: 1, Next: &middle.ListNode{Val: 2, Next: &middle.ListNode{Val: 3, Next: &middle.ListNode{Val: 4, Next: nil}}}})
 }
