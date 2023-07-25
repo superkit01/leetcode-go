@@ -27,4 +27,6 @@ func main() {
 		[]int{17233, 32521, 14087, 42738, 46669, 65662, 43204, 8224})
 
 	middle.ReverseList(&middle.ListNode{Val: 1, Next: &middle.ListNode{Val: 2, Next: &middle.ListNode{Val: 3, Next: &middle.ListNode{Val: 4, Next: nil}}}})
+
+	middle.HalveArray([]int{5, 19, 8, 1})
 }
