@@ -29,4 +29,6 @@ func main() {
 	middle.ReverseList(&middle.ListNode{Val: 1, Next: &middle.ListNode{Val: 2, Next: &middle.ListNode{Val: 3, Next: &middle.ListNode{Val: 4, Next: nil}}}})
 
 	middle.HalveArray([]int{5, 19, 8, 1})
+
+	middle.RepairCars([]int{4, 2, 3, 1}, 10)
 }
