@@ -33,4 +33,6 @@ func main() {
 	middle.RepairCars([]int{4, 2, 3, 1}, 10)
 
 	middle.DistanceK(&middle.TreeNode{Val: 1, Left: &middle.TreeNode{Val: 2, Left: &middle.TreeNode{Val: 4, Left: nil, Right: nil}, Right: nil}, Right: &middle.TreeNode{Val: 3, Left: nil, Right: &middle.TreeNode{Val: 5, Left: nil, Right: nil}}}, &middle.TreeNode{Val: 1, Left: nil, Right: nil}, 1)
+
+	middle.KthLargestNumber([]string{"1", "2", "0", "7", "0", "2", "0"}, 4)
 }
