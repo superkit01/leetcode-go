@@ -31,4 +31,6 @@ func main() {
 	middle.HalveArray([]int{5, 19, 8, 1})
 
 	middle.RepairCars([]int{4, 2, 3, 1}, 10)
+
+	middle.DistanceK(&middle.TreeNode{Val: 1, Left: &middle.TreeNode{Val: 2, Left: &middle.TreeNode{Val: 4, Left: nil, Right: nil}, Right: nil}, Right: &middle.TreeNode{Val: 3, Left: nil, Right: &middle.TreeNode{Val: 5, Left: nil, Right: nil}}}, &middle.TreeNode{Val: 1, Left: nil, Right: nil}, 1)
 }
