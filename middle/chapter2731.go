@@ -18,7 +18,7 @@ func sumDistance(nums []int, s string, d int) int {
 	sort.Ints(nums)
 
 	for i := 1; i < len(nums); i++ {
-		temp := (((int64(nums[i]) - int64(nums[i-1])) % 1000000007) * ((int64(len(nums) - i)) % 1000000007) * (int64(i) % 1000000007)) % 1000000007
+		temp := ((((int64(nums[i]) - int64(nums[i-1])) * int64(len(nums) - i)) % 1000000007) * int64(i)) % 1000000007
 		result += temp
 	}
 
