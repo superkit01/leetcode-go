@@ -37,4 +37,6 @@ func main() {
 	middle.KthLargestNumber([]string{"1", "2", "0", "7", "0", "2", "0"}, 4)
 
 	middle.QueensAttacktheKing([][]int{{0, 0}, {1, 1}, {2, 2}, {3, 4}, {3, 5}, {4, 4}, {4, 5}}, []int{3, 3})
+
+	easy.CountPoints("B0B6G0R6R0R6G9")
 }
