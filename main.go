@@ -39,4 +39,6 @@ func main() {
 	middle.QueensAttacktheKing([][]int{{0, 0}, {1, 1}, {2, 2}, {3, 4}, {3, 5}, {4, 4}, {4, 5}}, []int{3, 3})
 
 	easy.CountPoints("B0B6G0R6R0R6G9")
+
+	middle.MinPathCost([][]int{{5, 3}, {4, 0}, {2, 1}}, [][]int{{9, 8}, {1, 5}, {10, 12}, {18, 6}, {2, 4}, {14, 3}})
 }
