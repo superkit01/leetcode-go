@@ -41,4 +41,31 @@ func main() {
 	easy.CountPoints("B0B6G0R6R0R6G9")
 
 	middle.MinPathCost([][]int{{5, 3}, {4, 0}, {2, 1}}, [][]int{{9, 8}, {1, 5}, {10, 12}, {18, 6}, {2, 4}, {14, 3}})
+
+	//[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
+	middle.BstToGst(&middle.TreeNode{
+		Val: 4,
+		Left: &middle.TreeNode{
+			Val: 1,
+			Left: &middle.TreeNode{
+				Val: 0,
+			},
+			Right: &middle.TreeNode{
+				Val: 2,
+				Right: &middle.TreeNode{
+					Val: 3,
+				},
+			}},
+		Right: &middle.TreeNode{
+			Val: 6,
+			Left: &middle.TreeNode{
+				Val: 5,
+			},
+			Right: &middle.TreeNode{
+				Val: 7,
+				Right: &middle.TreeNode{
+					Val: 8,
+				},
+			}},
+	})
 }
