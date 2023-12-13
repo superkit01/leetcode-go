@@ -9,7 +9,7 @@ package middle
  * }
  */
 
-func bstToGst(root *TreeNode) *TreeNode {
+func BstToGst(root *TreeNode) *TreeNode {
 
 	var sum = 0
 
