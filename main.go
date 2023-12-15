@@ -68,4 +68,52 @@ func main() {
 				},
 			}},
 	})
+
+	middle.ReverseOddLevels(
+		&middle.TreeNode{
+			Val: 0,
+			Left: &middle.TreeNode{
+				Val: 1,
+				Left: &middle.TreeNode{
+					Val: 0,
+					Left: &middle.TreeNode{
+						Val: 1,
+					},
+					Right: &middle.TreeNode{
+						Val: 1,
+					},
+				},
+				Right: &middle.TreeNode{
+					Val: 0,
+					Left: &middle.TreeNode{
+						Val: 1,
+					},
+					Right: &middle.TreeNode{
+						Val: 1,
+					},
+				},
+			},
+			Right: &middle.TreeNode{
+				Val: 2,
+				Left: &middle.TreeNode{
+					Val: 0,
+					Left: &middle.TreeNode{
+						Val: 2,
+					},
+					Right: &middle.TreeNode{
+						Val: 2,
+					},
+				},
+				Right: &middle.TreeNode{
+					Val: 0,
+					Left: &middle.TreeNode{
+						Val: 2,
+					},
+					Right: &middle.TreeNode{
+						Val: 2,
+					},
+				},
+			},
+		},
+	)
 }
