@@ -24,16 +24,13 @@ func dp(rows []int, current int, remaining int, max int) int {
 	} else {
 		if current < max {
 
-			oldRows := make([]int, 0)
-			oldRows = append(oldRows, rows...)
-
 			newRows := make([]int, 0)
 			newRows = append(newRows, rows...)
 			for i := 0; i < len(newRows); i++ {
 				newRows[i] &= ^(1 << current)
 			}
 
-			notUse := dp(oldRows, current+1, remaining, max)
+			notUse := dp(rows, current+1, remaining, max)
 
 			use := dp(newRows, current+1, remaining-1, max)
 
