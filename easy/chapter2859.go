@@ -3,10 +3,9 @@ package easy
 func sumIndicesWithKSetBits(nums []int, k int) int {
 	sum := 0
 
-	for _, v := range nums {
-
+	for i := 0; i < len(nums); i++ {
 		countBinary := 0
-		binV := v
+		binV := i
 
 		for binV > 0 {
 			if binV&0b1 == 0b1 {
@@ -15,9 +14,8 @@ func sumIndicesWithKSetBits(nums []int, k int) int {
 			binV = binV >> 1
 		}
 		if countBinary == k {
-			sum += v
+			sum += nums[i]
 		}
-
 	}
 
 	return sum
