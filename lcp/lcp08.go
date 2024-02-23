@@ -1,4 +1,4 @@
-package middle
+package lcp
 
 func getTriggerTime(increase [][]int, requirements [][]int) []int {
 	newIncrease := make([][]int, 0)

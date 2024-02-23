@@ -1,4 +1,4 @@
-package easy
+package lcp
 
 func minCount(coins []int) int {
 	sum := 0

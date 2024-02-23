@@ -1,4 +1,4 @@
-package easy
+package lcp
 
 func fraction(cont []int) []int {
 	numerator := 1
