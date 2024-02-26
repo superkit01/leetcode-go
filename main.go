@@ -118,4 +118,6 @@ func main() {
 	)
 
 	middle.MaximumRows([][]int{{0, 0, 0}, {1, 0, 1}, {0, 1, 1}, {0, 0, 1}}, 2)
+
+	middle.NumOfSubarrays([]int{2, 2, 2, 2, 5, 5, 5, 8}, 3, 10)
 }
