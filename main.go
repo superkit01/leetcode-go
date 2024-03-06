@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"leetcode-go/easy"
+	"leetcode-go/lcp"
 	"leetcode-go/middle"
 	"leetcode-go/week/week336"
 )
@@ -120,4 +121,6 @@ func main() {
 	middle.MaximumRows([][]int{{0, 0, 0}, {1, 0, 1}, {0, 1, 1}, {0, 0, 1}}, 2)
 
 	middle.NumOfSubarrays([]int{2, 2, 2, 2, 5, 5, 5, 8}, 3, 10)
+
+	lcp.MagicTower([]int{100, 100, 100, -250, -60, -140, -50, -50, 100, 150})
 }
