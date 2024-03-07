@@ -1,6 +1,8 @@
 package lcr
 
 func findTargetIn2DPlants(plants [][]int, target int) bool {
+	//从右上角观察，矩阵可以转换成BST
+
 	if len(plants) == 0 || len(plants[0]) == 0 {
 		return false
 	}
