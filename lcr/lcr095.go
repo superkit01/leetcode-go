@@ -1,0 +1,32 @@
+package lcr
+
+import "math"
+
+// text1 1111111111
+//		 i
+// text2 1111
+//		 j
+//dp[i][j]
+
+func longestCommonSubsequence(text1 string, text2 string) int {
+
+	if len(text1) == 0 || len(text2) == 0 {
+		return 0
+	}
+	dp := make([][]int, len(text1)+1)
+	for i := range dp {
+		dp[i] = make([]int, len(text2)+1)
+	}
+
+	for i := 0; i < len(text1); i++ {
+		for j := 0; j < len(text2); j++ {
+			if text1[i] == text2[j] {
+				dp[i+1][j+1] = dp[i][j] + 1
+			} else {
+				dp[i+1][j+1] = int(math.Max(float64(dp[i+1][j]), float64(dp[i][j+1])))
+			}
+		}
+	}
+
+	return dp[len(text1)][len(text2)]
+}
