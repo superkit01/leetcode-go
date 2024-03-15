@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"leetcode-go/easy"
 	"leetcode-go/lcp"
+	"leetcode-go/lcr"
 	"leetcode-go/middle"
 	"leetcode-go/week/week336"
 )
@@ -123,4 +124,7 @@ func main() {
 	middle.NumOfSubarrays([]int{2, 2, 2, 2, 5, 5, 5, 8}, 3, 10)
 
 	lcp.MagicTower([]int{100, 100, 100, -250, -60, -140, -50, -50, 100, 150})
+
+	lcr.LenLongestFibSubseq([]int{1,2,3,4,5,6,7,8})
+
 }
