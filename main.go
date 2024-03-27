@@ -125,6 +125,8 @@ func main() {
 
 	lcp.MagicTower([]int{100, 100, 100, -250, -60, -140, -50, -50, 100, 150})
 
-	lcr.LenLongestFibSubseq([]int{1,2,3,4,5,6,7,8})
+	lcr.LenLongestFibSubseq([]int{1, 2, 3, 4, 5, 6, 7, 8})
+
+	middle.CountWays([][]int{{1, 3}, {10, 20}, {2, 5}, {4, 8}})
 
 }
