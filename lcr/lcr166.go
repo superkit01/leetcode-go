@@ -1,6 +1,9 @@
-package middle
+package lcr
 
 import "math"
+
+//	二维数组 最大路径 之和
+//  dp[i][j] = max( dp[i-1][j], dp[i][j-1]) + grid[i][j]
 
 func maxValue(grid [][]int) int {
 	m := len(grid)
