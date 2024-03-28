@@ -1,5 +1,5 @@
 package sort
-
+//插入
 func InsertSort(nums []int) {
 	if len(nums) <= 1 {
 		return

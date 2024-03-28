@@ -1,4 +1,4 @@
-package week
+package easy
 
 func numberOfPairs(nums []int) []int {
 	result := [2]int{0, len(nums)}

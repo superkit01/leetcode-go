@@ -1,4 +1,4 @@
-package easy
+package lcs
 
 import "sort"
 

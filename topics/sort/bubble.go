@@ -1,5 +1,5 @@
 package sort
-
+//冒泡
 func BubbleSort(nums []int) {
 	if len(nums) <= 1 {
 		return

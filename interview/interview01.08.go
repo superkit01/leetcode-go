@@ -1,4 +1,4 @@
-package middle
+package interview
 
 func setZeroes2(matrix [][]int) {
 	row := make(map[int]bool)

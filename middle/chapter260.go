@@ -6,6 +6,9 @@ func singleNumber(nums []int) []int {
 		z = v ^ z
 	}
 
+	//  1  ...000001
+    // -1  ...111111
+    //最后一位二进制1
 	pos1 := z & -z
 
 	x0 := 0

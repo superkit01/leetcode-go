@@ -1,4 +1,4 @@
-package easy
+package lcs
 
 func leastMinutes(n int) int {
 	if n == 1 {

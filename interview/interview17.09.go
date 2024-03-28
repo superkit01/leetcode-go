@@ -1,4 +1,4 @@
-package middle
+package interview
 
 import (
 	"sort"
