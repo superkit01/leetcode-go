@@ -128,5 +128,7 @@ func main() {
 	lcr.LenLongestFibSubseq([]int{1, 2, 3, 4, 5, 6, 7, 8})
 
 	middle.CountWays([][]int{{1, 3}, {10, 20}, {2, 5}, {4, 8}})
+	
+	easy.MinimumSum([]int{8,6,1,5,3})
 
 }
