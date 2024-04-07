@@ -7,6 +7,7 @@ import (
 	"leetcode-go/lcr"
 	"leetcode-go/middle"
 	"leetcode-go/week/week336"
+	"leetcode-go/week/week392"
 )
 
 func main() {
@@ -128,7 +129,10 @@ func main() {
 	lcr.LenLongestFibSubseq([]int{1, 2, 3, 4, 5, 6, 7, 8})
 
 	middle.CountWays([][]int{{1, 3}, {10, 20}, {2, 5}, {4, 8}})
-	
-	easy.MinimumSum([]int{8,6,1,5,3})
+
+	easy.MinimumSum([]int{8, 6, 1, 5, 3})
+
+	week392.GetSmallestString("xaxcd", 4)
+	week392.MinOperationsToMakeMedianK([]int{1,2,3,4,5,6}, 4)
 
 }
