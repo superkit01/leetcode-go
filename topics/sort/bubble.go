@@ -1,5 +1,10 @@
 package sort
+
 //冒泡
+//  1 3 4 2 5 6 9
+//				i
+//	j ->
+//  num[j] > num[j+1]  swap
 func BubbleSort(nums []int) {
 	if len(nums) <= 1 {
 		return
