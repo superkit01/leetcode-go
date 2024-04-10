@@ -6,7 +6,6 @@ type UnionFind struct {
 }
 
 // 并查集
-
 func (uf UnionFind) Find(p int) int {
 	if p != uf.parent[p] {
 		uf.parent[p] = uf.Find(uf.parent[p])
