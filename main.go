@@ -135,4 +135,6 @@ func main() {
 	week392.GetSmallestString("xaxcd", 4)
 	week392.MinOperationsToMakeMedianK([]int{1,2,3,4,5,6}, 4)
 
+	middle.MaximumBinaryString("01111001100000110010")
+
 }
