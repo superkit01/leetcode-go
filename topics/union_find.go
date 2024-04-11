@@ -6,20 +6,20 @@ type UnionFind struct {
 }
 
 // 并查集
-func (uf UnionFind) Find(p int) int {
-	if p != uf.parent[p] {
-		uf.parent[p] = uf.Find(uf.parent[p])
+func (this *UnionFind) Find(p int) int {
+	if p != this.parent[p] {
+		this.parent[p] = this.Find(this.parent[p])
 	}
-	return uf.parent[p]
+	return this.parent[p]
 }
 
-func (uf UnionFind) Union(p, q int) {
-	pRoot := uf.Find(p)
-	qRoot := uf.Find(q)
+func (this *UnionFind) Union(p, q int) {
+	pRoot := this.Find(p)
+	qRoot := this.Find(q)
 	if pRoot == qRoot {
 		return
 	}
-	uf.parent[pRoot] = qRoot
+	this.parent[pRoot] = qRoot
 }
 
 func New(n int) *UnionFind {
