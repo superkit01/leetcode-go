@@ -138,6 +138,8 @@ func main() {
 
 	middle.MaximumBinaryString("01111001100000110010")
 
-	hard.MinOperations([]int{4,2,3,5})
+	hard.MinOperations([]int{4, 2, 3, 5})
+
+	fmt.Printf("%v", middle.Divide(-1021989372, -82778243))
 
 }

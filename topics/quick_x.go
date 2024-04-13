@@ -9,7 +9,7 @@ func quickX(x, n int) int {
 	}
 
 	ans := 1
-	if n%2 == 1 {
+	if n & 0b1 == 0b1{
 		ans = quickX(x, n-1) * x
 	} else {
 		ans = quickX(x, n>>1) * quickX(x, n>>1)
@@ -24,10 +24,10 @@ func quickA(x, n int) int {
 		return 0
 	}
 	ans := 0
-	if n%2 == 1 {
+	if n&0b1 == 0b1 {
 		ans = quickA(x, n-1) + x
 	} else {
-		ans = quickA(x, n/2) + quickA(x, n/2)
+		ans = quickA(x, n>>1) + quickA(x, n>>1)
 	}
 	return ans
 }
