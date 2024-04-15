@@ -140,6 +140,6 @@ func main() {
 
 	hard.MinOperations([]int{4, 2, 3, 5})
 
-	fmt.Printf("%v", middle.Divide(-1021989372, -82778243))
+	middle.Divide2(-1021989372, -82778243)
 
 }
