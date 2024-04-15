@@ -9,6 +9,7 @@ import (
 	"leetcode-go/middle"
 	"leetcode-go/week/week336"
 	"leetcode-go/week/week392"
+	"leetcode-go/week/week393"
 )
 
 func main() {
@@ -141,5 +142,6 @@ func main() {
 	hard.MinOperations([]int{4, 2, 3, 5})
 
 	middle.Divide2(-1021989372, -82778243)
+	week393.FindLatestTime("?0:40")
 
 }
