@@ -1,6 +1,7 @@
 package hard
 
 import (
+	"leetcode-go/topics"
 	"math"
 	"sort"
 )
@@ -8,7 +9,7 @@ import (
 func MinMalwareSpreadII(graph [][]int, initial []int) int {
 	sort.Ints(initial)
 	n := len(graph)
-	unionFind := New(n)
+	unionFind := topics.New(n)
 
 	initialBool := make([]bool, n)
 	for _, i := range initial {
