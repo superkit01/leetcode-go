@@ -37,13 +37,12 @@ func minMalwareSpread(graph [][]int, initial []int) int {
 	ans := -1
 	for k, v := range infected {
 		if len(v) == 1 {
-				
+
 			if count < connectedConnect[k] {
 				count = connectedConnect[k]
 				ans = v[0]
-			}
-			//多个答案返回最小的节点
-			if count == connectedConnect[k] {
+			} else if count == connectedConnect[k] {
+				//多个答案返回最小的节点
 				ans = int(math.Min(float64(ans), float64(v[0])))
 			}
 		}
@@ -78,8 +77,8 @@ func (this *UnionFind) Find(p int) int {
 		return this.parent[p]
 	}
 
-	// return this.Find(this.parentmath
-
+	// return this.Find(this.parent)
+	// path compression  路径压缩
 	this.parent[p] = this.Find(this.parent[p])
 	return this.parent[p]
 
