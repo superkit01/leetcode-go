@@ -1,6 +1,7 @@
 package hard
 
 import (
+	"leetcode-go/topics"
 	"math"
 	"sort"
 )
@@ -8,7 +9,7 @@ import (
 func minMalwareSpread(graph [][]int, initial []int) int {
 	n := len(graph)
 
-	unionFind := New(n)
+	unionFind := topics.New(n)
 
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
@@ -56,40 +57,40 @@ func minMalwareSpread(graph [][]int, initial []int) int {
 
 }
 
-type UnionFind struct {
-	parent []int
-}
+// type UnionFind struct {
+// 	parent []int
+// }
 
-func New(n int) *UnionFind {
-	parent := make([]int, n)
+// func New(n int) *UnionFind {
+// 	parent := make([]int, n)
 
-	for i := range parent {
-		parent[i] = i
-	}
+// 	for i := range parent {
+// 		parent[i] = i
+// 	}
 
-	return &UnionFind{
-		parent: parent,
-	}
-}
+// 	return &UnionFind{
+// 		parent: parent,
+// 	}
+// }
 
-func (this *UnionFind) Find(p int) int {
-	if this.parent[p] == p {
-		return this.parent[p]
-	}
+// func (this *UnionFind) Find(p int) int {
+// 	if this.parent[p] == p {
+// 		return this.parent[p]
+// 	}
 
-	// return this.Find(this.parent)
-	// path compression  路径压缩
-	this.parent[p] = this.Find(this.parent[p])
-	return this.parent[p]
+// 	// return this.Find(this.parent)
+// 	// path compression  路径压缩
+// 	this.parent[p] = this.Find(this.parent[p])
+// 	return this.parent[p]
 
-}
+// }
 
-func (this *UnionFind) Union(p, q int) {
-	pParent := this.Find(p)
-	qParent := this.Find(q)
-	if pParent == qParent {
-		return
-	}
-	this.parent[qParent] = pParent
+// func (this *UnionFind) Union(p, q int) {
+// 	pParent := this.Find(p)
+// 	qParent := this.Find(q)
+// 	if pParent == qParent {
+// 		return
+// 	}
+// 	this.parent[qParent] = pParent
 
-}
+// }
