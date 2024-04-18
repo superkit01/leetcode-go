@@ -44,3 +44,37 @@ func FindOriginalArray(changed []int) []int {
 	return odd
 
 }
+
+func FindOriginalArrayII(changed []int) []int {
+	if len(changed) == 0 || len(changed)%2 == 1 {
+		return []int{}
+	}
+
+	channedMap := make(map[int]int, 0)
+	for i := 0; i < len(changed); i++ {
+		channedMap[changed[i]]++
+	}
+
+	sort.Ints(changed)
+
+	origin := make([]int, 0)
+
+	for i := len(changed) - 1; i >= 0; i-- {
+		if channedMap[changed[i]] == 0 {
+			continue
+		}
+		if changed[i]%2 == 1 {
+			return []int{}
+		}
+		if channedMap[changed[i]/2] == 0 {
+			return []int{}
+		}
+
+		channedMap[changed[i]]--
+		channedMap[changed[i]/2]--
+		origin = append(origin, changed[i]/2)
+	}
+
+	return origin
+
+}
