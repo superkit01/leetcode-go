@@ -2,8 +2,9 @@ package lcr
 
 import "math"
 
-//dp[i][j]
-//[1,2,3,4,5,6,7,8]
+// 最长的斐波那契子序列的长度
+// dp[i][j]  以 i 和 j 位置结尾的最长fib序列 （j<i）
+// [1,2,3,4,5,6,7,8]
 // 	 <-j   i
 
 func LenLongestFibSubseq(arr []int) int {

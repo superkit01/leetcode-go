@@ -32,3 +32,20 @@ outer:
 	return ans
 
 }
+
+func bestTimingII(prices []int) int {
+	if len(prices) <= 1 {
+		return 0
+	}
+	min := prices[0]
+	ans := 0
+
+	for i := 1; i < len(prices); i++ {
+		profit := prices[i] - min //股票在第i天卖出的利润
+		ans = int(math.Max(float64(ans), float64(profit)))
+
+		min = int(math.Min(float64(min), float64(prices[i])))
+	}
+	return ans
+
+}

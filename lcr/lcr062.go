@@ -1,5 +1,8 @@
 package lcr
 
+/*
+ 前缀树 模板
+*/
 type Trie struct {
 	childrenMap map[byte]*Trie
 	children    []*Trie

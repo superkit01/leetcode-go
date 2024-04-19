@@ -1,5 +1,7 @@
 package lcr
 
+// 后序遍历：数组最后一个元素为根节点
+
 // |左节点|右节点|根节点|
 func verifyTreeOrder(postorder []int) bool {
 	if len(postorder) <= 1 {

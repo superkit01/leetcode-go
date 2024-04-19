@@ -6,7 +6,11 @@ import "math"
 //		 i
 // text2 1111
 //		 j
-//dp[i][j]
+
+//dp[i][j]  : text1 0~i  text2 0~j 的最长公共子串
+//
+// text[i]==text[j]   dp[i][j]=dp[i-1]dp[j-1]+1
+// text[i]!=text[j]   dp[i][j]= max(dp[i-1]dp[j],dp[i][j-1])
 
 func longestCommonSubsequence(text1 string, text2 string) int {
 
