@@ -143,6 +143,6 @@ func main() {
 
 	middle.Divide2(-1021989372, -82778243)
 	week393.FindLatestTime("?0:40")
-
+	fmt.Printf("%v \n",middle.CombinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
 
 }
