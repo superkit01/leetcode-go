@@ -4,13 +4,13 @@ package middle
 func combinationSum(candidates []int, target int) [][]int {
     
     ans:=make([][]int,0)
-    recursive(candidates,0,target,[]int{},&ans)
+    dfs39(candidates,0,target,[]int{},&ans)
     return ans
 
 }
 
 //dfs  i位置 使用或不使用
-func recursive(candidates []int,index int,remaining int,current []int,ans *[][]int){
+func  dfs39(candidates []int,index int,remaining int,current []int,ans *[][]int){
     if remaining <0 {
         return 
     }
@@ -26,15 +26,16 @@ func recursive(candidates []int,index int,remaining int,current []int,ans *[][]i
         return
     }
     
+    //使用index位置
     temp:=make([]int,0)
     temp=append(temp,current...)
     temp=append(temp,candidates[index])
+    dfs39(candidates, index,remaining-candidates[index],temp,ans)
     
-    recursive(candidates, index,remaining-candidates[index],temp,ans)
-    
+    //不使用index位置
     temp2:=make([]int,0)
     temp2=append(temp2,current...)
-    recursive(candidates, index+1,remaining,temp2,ans)
+    dfs39(candidates, index+1,remaining,temp2,ans)
    
     
     
