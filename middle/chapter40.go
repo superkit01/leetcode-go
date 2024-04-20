@@ -2,6 +2,7 @@ package middle
 
 import "sort"
 
+// dfs   回溯 + 剪枝
 func CombinationSum2(candidates []int, target int) [][]int {
 	sort.Ints(candidates)
 	ans := make([][]int, 0)
