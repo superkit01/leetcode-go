@@ -10,6 +10,7 @@ import (
 	"leetcode-go/week/week336"
 	"leetcode-go/week/week392"
 	"leetcode-go/week/week393"
+	"leetcode-go/week/week394"
 )
 
 func main() {
@@ -143,6 +144,7 @@ func main() {
 
 	middle.Divide2(-1021989372, -82778243)
 	week393.FindLatestTime("?0:40")
-	fmt.Printf("%v \n",middle.CombinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
+	fmt.Printf("%v \n", middle.CombinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
+	week394.MinimumOperations([][]int{{0, 6, 2}, {9, 0, 9}, {4, 9, 6}})
 
 }
