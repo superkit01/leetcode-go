@@ -26,6 +26,7 @@ func MinimumOperations(grid [][]int) int {
 		}
 	}
 
+	//对dp 进行二次 dp 求路径和的最小值 （相邻的两列不能变为相同的值）
 	for i := 1; i < len(dp); i++ {
 		for j := 0; j < len(dp[0]); j++ {
 			min := math.MaxInt32
@@ -41,10 +42,9 @@ func MinimumOperations(grid [][]int) int {
 			dp[i][j] = min
 		}
 	}
-	fmt.Printf("%v \n", dp)
 
+	//最后一列取最小值
 	min := math.MaxInt32
-
 	for i := 0; i < len(dp[len(dp)-1]); i++ {
 		if dp[len(dp)-1][i] < min {
 			min = dp[len(dp)-1][i]
