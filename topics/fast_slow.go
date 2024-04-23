@@ -54,6 +54,13 @@ func findEntryOfCycle(head *ListNode) *ListNode {
 }
 
 // 链表的中间节点
+// 偶数节点时返回中间两节点的后一个
 func middleNode(head *ListNode) *ListNode {
-	return nil
+	fast := head
+	slow := head
+	for fast != nil && fast.Next != nil {
+		fast = fast.Next.Next
+		slow = slow.Next
+	}
+	return slow
 }
