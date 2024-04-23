@@ -150,4 +150,5 @@ func main() {
 	middle.MaxSatisfied([]int{10, 1, 7}, []int{0, 0, 0}, 2)
 
 	lcr.AddBinary("11", "10")
+	lcr.SingleNumber([]int{-2})
 }
