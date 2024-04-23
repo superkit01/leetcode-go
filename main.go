@@ -147,4 +147,5 @@ func main() {
 	fmt.Printf("%v \n", middle.CombinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
 	week394.MinimumOperations([][]int{{0, 6, 2}, {9, 0, 9}, {4, 9, 6}})
 
+	middle.MaxSatisfied([]int{10, 1, 7}, []int{0, 0, 0}, 2)
 }
