@@ -148,4 +148,6 @@ func main() {
 	week394.MinimumOperations([][]int{{0, 6, 2}, {9, 0, 9}, {4, 9, 6}})
 
 	middle.MaxSatisfied([]int{10, 1, 7}, []int{0, 0, 0}, 2)
+
+	lcr.AddBinary("11", "10")
 }
