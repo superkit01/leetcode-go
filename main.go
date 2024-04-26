@@ -150,18 +150,28 @@ func main() {
 	middle.MaxSatisfied([]int{10, 1, 7}, []int{0, 0, 0}, 2)
 
 	lcr.AddBinary("11", "10")
-	
+
 	lcr.SingleNumber([]int{-2})
 
-
-	cache:=lcr.ConstructorLRU(2)
-	cache.Put(1,1)
-	cache.Put(2,2)
+	cache := lcr.ConstructorLRU(2)
+	cache.Put(1, 1)
+	cache.Put(2, 2)
 	cache.Get(1)
-	cache.Put(3,3)
+	cache.Put(3, 3)
 	cache.Get(2)
-	cache.Put(4,4)
+	cache.Put(4, 4)
 	cache.Get(1)
 	cache.Get(3)
 	cache.Get(4)
+
+	snapArray := middle.Constructor1146(1)
+	snapArray.Snap()
+	snapArray.Snap()
+	snapArray.Set(0, 4)
+	snapArray.Snap()
+	snapArray.Get(0, 1)
+	snapArray.Set(0, 12)
+	snapArray.Get(0, 1)
+	snapArray.Snap()
+	snapArray.Get(0, 3)
 }
