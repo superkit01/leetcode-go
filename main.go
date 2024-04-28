@@ -11,6 +11,7 @@ import (
 	"leetcode-go/week/week392"
 	"leetcode-go/week/week393"
 	"leetcode-go/week/week394"
+	"leetcode-go/week/week395"
 )
 
 func main() {
@@ -174,4 +175,7 @@ func main() {
 	snapArray.Get(0, 1)
 	snapArray.Snap()
 	snapArray.Get(0, 3)
+
+	week395.MinimumAddedInteger([]int{9, 4, 3, 9, 4}, []int{7, 8, 8})
+
 }
