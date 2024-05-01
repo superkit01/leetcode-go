@@ -178,4 +178,6 @@ func main() {
 
 	week395.MinimumAddedInteger([]int{9, 4, 3, 9, 4}, []int{7, 8, 8})
 
+	middle.TotalCost([]int{2,2,2,2,2,2,1,4,5,5,5,5,5,2,2,2,2,2,2,2,2,2,2,2,2,2},7,3)
+
 }
