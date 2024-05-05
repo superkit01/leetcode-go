@@ -3,8 +3,15 @@ package week396
 func minAnagramLength(s string) int {
 	n := len(s)
 	prim := make([]int, 0)
-	prim = append(prim, 1)
-	for i := 2; i <= n/2; i++ {
+	// for i := 1; i <= int(math.Sqrt(float64(n))); i++ {
+	// 	if n%i == 0 {
+	// 		prim = append(prim, i)
+	// 		prim = append(prim, n/i)
+	// 	}
+	// }
+	// sort.Ints(prim)
+
+	for i := 1; i <= n-1; i++ {
 		if n%i == 0 {
 			prim = append(prim, i)
 		}
@@ -26,18 +33,30 @@ outer:
 }
 
 func equals(s1, s2 string) bool {
-	count1 := make(map[rune]int, 0)
-	count2 := make(map[rune]int, 0)
+
+	count1 := [26]int{}
+	count2 := [26]int{}
+
 	for _, v := range s1 {
-		count1[v]++
+		count1[v-'a']++
 	}
 	for _, v := range s2 {
-		count2[v]++
+		count2[v-'a']++
 	}
-	for k, v := range count1 {
-		if count2[k] != v {
-			return false
-		}
-	}
-	return true
+	return count1 == count2
+
+	// count1 := make(map[rune]int, 0)
+	// count2 := make(map[rune]int, 0)
+	// for _, v := range s1 {
+	// 	count1[v]++
+	// }
+	// for _, v := range s2 {
+	// 	count2[v]++
+	// }
+	// for k, v := range count1 {
+	// 	if count2[k] != v {
+	// 		return false
+	// 	}
+	// }
+	// return true
 }
