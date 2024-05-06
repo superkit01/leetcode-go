@@ -39,6 +39,7 @@ func dfs(preorder *[]int, inorder []int) *TreeNode {
 			if len(rightInorder) > 0 {
 				root.Right = dfs(preorder, rightInorder)
 			}
+			break
 
 		}
 	}
