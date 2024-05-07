@@ -1,12 +1,6 @@
 package topics
 
-//lowest common ancesters
-//最近公共祖先
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+//lowest common ancesters 最近公共祖先
 
 //dfs 深度优先 递归
 func lca(root, p, q *TreeNode) {
