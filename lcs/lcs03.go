@@ -1,5 +1,6 @@
 package lcs
 
+//DFS 深搜
 func largestArea(grid []string) int {
 	m := len(grid)
 	n := len(grid[0])
