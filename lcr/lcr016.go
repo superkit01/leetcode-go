@@ -1,5 +1,7 @@
 package lcr
 
+//dp  dp[i]= min(dp[i-1]+1, index- postMap[nums[i]])
+
 func LengthOfLongestSubstring(s string) int {
 	if len(s) <= 1 {
 		return len(s)
@@ -38,4 +40,30 @@ func min(i, j int) int {
 	} else {
 		return j
 	}
+}
+
+//
+func LengthOfLongestSubstringII(s string) int {
+	if len(s) <= 1 {
+		return len(s)
+	}
+	posMap := make(map[byte]int, 0)
+	posMap[s[0]]++
+	ans := 1
+
+	i := 0
+	j := 1
+	for j < len(s) {
+		for posMap[s[j]] > 0 {
+			posMap[s[i]]--
+			i++
+		}
+		posMap[s[j]]++
+
+		if ans < j-i+1 {
+			ans = j - i + 1
+		}
+		j++
+	}
+	return ans
 }
