@@ -181,4 +181,6 @@ func main() {
 	middle.TotalCost([]int{2, 2, 2, 2, 2, 2, 1, 4, 5, 5, 5, 5, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2}, 7, 3)
 
 	lcr.NumSubarrayProductLessThanK([]int{10, 5, 2, 6}, 100)
+
+	lcr.LengthOfLongestSubstring("abcabcbb")
 }
