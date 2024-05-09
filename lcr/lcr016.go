@@ -42,7 +42,7 @@ func min(i, j int) int {
 	}
 }
 
-//
+//双指针
 func LengthOfLongestSubstringII(s string) int {
 	if len(s) <= 1 {
 		return len(s)
