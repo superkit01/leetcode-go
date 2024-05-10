@@ -6,7 +6,7 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	inOrder := make([]*DeepNode, 0)
 
 	//带深度的中序遍历 |左|跟|右|
-	dfs(root, &inOrder, 1)
+	dfsLCA(root, &inOrder, 1)
 
 	pIndex := -1
 	qIndex := -1
@@ -36,16 +36,16 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 
 }
 
-func dfs(root *TreeNode, inOrder *[]*DeepNode, deep int) {
+func dfsLCA(root *TreeNode, inOrder *[]*DeepNode, deep int) {
 	if root == nil {
 		return
 	}
-	dfs(root.Left, inOrder, deep+1)
+	dfsLCA(root.Left, inOrder, deep+1)
 	*inOrder = append(*inOrder, &DeepNode{
 		node: root,
 		deep: deep,
 	})
-	dfs(root.Right, inOrder, deep+1)
+	dfsLCA(root.Right, inOrder, deep+1)
 
 }
 
