@@ -185,4 +185,6 @@ func main() {
 	lcr.LengthOfLongestSubstring("abcabcbb")
 
 	lcr.MinWindow("ADOBECODEBANC", "ABC")
+
+	lcr.IsPalindrome("A man, a plan, a canal: Panama")
 }

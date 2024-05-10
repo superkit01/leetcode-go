@@ -18,7 +18,7 @@ func MinWindow(s string, t string) string {
 	ans := ""
 	i := 0
 	j := 0
-	for j <= len(s) {
+	for j < len(s) {
 		cntS[rune(s[j])]++
 
 		for great(cntS, cntT) && i <= j {
