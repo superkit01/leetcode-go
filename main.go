@@ -187,4 +187,6 @@ func main() {
 	lcr.MinWindow("ADOBECODEBANC", "ABC")
 
 	lcr.IsPalindrome("A man, a plan, a canal: Panama")
+
+	middle.GarbageCollection([]string{"G", "P", "GP", "GG"}, []int{2, 4, 3})
 }
