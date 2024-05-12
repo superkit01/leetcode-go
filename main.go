@@ -12,6 +12,7 @@ import (
 	"leetcode-go/week/week393"
 	"leetcode-go/week/week394"
 	"leetcode-go/week/week395"
+	"leetcode-go/week/week397"
 )
 
 func main() {
@@ -189,4 +190,6 @@ func main() {
 	lcr.IsPalindrome("A man, a plan, a canal: Panama")
 
 	middle.GarbageCollection([]string{"G", "P", "GP", "GG"}, []int{2, 4, 3})
+
+	week397.MaxScore([][]int{{4,3,2}, {3,2,1}})
 }
