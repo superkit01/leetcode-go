@@ -2,61 +2,43 @@ package dweek130
 
 import "math"
 
-func minimumSubstringsInPartition(s string) int {
+func MinimumSubstringsInPartitionII(s string) int {
 	//记忆化搜索
-	cache := make(map[string]int, 0)
-	return dfs(s, &cache) + 1
+	cache := make(map[int]int, 0)
+
+	return dfsII(s, len(s)-1, &cache) + 1
 }
 
-func dfs(s string, cache *map[string]int) int {
-	if v, ok := (*cache)[s]; ok {
+func dfsII(s string, index int, cache *map[int]int) int {
+	if v, ok := (*cache)[index]; ok {
 		return v
 	}
-	//Break Case
-	if len(s) <= 1 {
-		(*cache)[s] = 0
-		return 0
-	}
-	if isBalance(s) {
-		(*cache)[s] = 0
-		return 0
-	}
 
-	value := math.MaxInt32
-	//不平衡遍历切分
-	for i := 1; i < len(s); i++ {
-		temp := dfs(s[0:i], cache) + dfs(s[i:], cache) + 1
-		if value > temp {
-			value = temp
-		}
-	}
-	(*cache)[s] = value
-	return value
-}
-
-func isBalance(s string) bool {
-	if len(s) <= 1 {
-		return true
+	if index < 0 {
+		(*cache)[index] = 0
+		return 0
 	}
 
 	cnt := [26]int{}
-	for _, v := range s {
-		cnt[v-'a']++
-	}
+	maxCount := 0
+	maxLetters := 0
+	value := math.MaxInt
 
-	flag := false
-	value := 0
-	for _, v := range cnt {
-		if v != 0 {
-			if !flag {
-				value = v
-				flag = !flag
-			}
-			if v != value {
-				return false
+	for i := index; i >= 0; i-- {
+		if cnt[s[i]-'a'] == 0 {
+			maxLetters++
+		}
+		cnt[s[i]-'a']++
+		if maxCount < cnt[s[i]-'a'] {
+			maxCount = cnt[s[i]-'a']
+		}
+		if maxLetters*maxCount == index-i+1 {
+			temp := dfsII(s, i-1, cache) + 1
+			if value > temp {
+				value = temp
 			}
 		}
-
 	}
-	return true
+	(*cache)[index] = value
+	return value
 }

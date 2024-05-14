@@ -7,12 +7,13 @@ import (
 	"leetcode-go/lcp"
 	"leetcode-go/lcr"
 	"leetcode-go/middle"
+	"leetcode-go/week/dweek130"
 	"leetcode-go/week/week336"
 	"leetcode-go/week/week392"
 	"leetcode-go/week/week393"
 	"leetcode-go/week/week394"
 	"leetcode-go/week/week395"
-	"leetcode-go/week/week397"
+	"time"
 )
 
 func main() {
@@ -190,4 +191,9 @@ func main() {
 	lcr.IsPalindrome("A man, a plan, a canal: Panama")
 
 	middle.GarbageCollection([]string{"G", "P", "GP", "GG"}, []int{2, 4, 3})
+
+	currentTime1 := time.Now()
+	dweek130.MinimumSubstringsInPartitionII("fabccddg")
+	currentTime2 := time.Now()
+	fmt.Printf("%v \n", currentTime2.Sub(currentTime1))
 }
