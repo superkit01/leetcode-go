@@ -4,7 +4,7 @@ func wordPuzzle(grid [][]byte, target string) bool {
 	m := len(grid)
 	n := len(grid[0])
 
-	matrix := make([][]int, m)
+	matrix := make([][]int, m)//标记已用
 	for i := range matrix {
 		matrix[i] = make([]int, n)
 	}
@@ -27,9 +27,11 @@ func wordPuzzle(grid [][]byte, target string) bool {
 
 func dfs129(i, j, index int, matrix [][]int, grid [][]byte, target string) bool {
 	if index == len(target)-1 {
-		return true
+		return true 
 	}
 
+	
+	// 四个方向搜索
 	if i+1 < len(grid) && grid[i+1][j] == target[index+1] && matrix[i+1][j] == 0 {
 		matrix[i+1][j] = 1
 		if dfs129(i+1, j, index+1, matrix, grid, target) {

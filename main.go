@@ -13,7 +13,6 @@ import (
 	"leetcode-go/week/week393"
 	"leetcode-go/week/week394"
 	"leetcode-go/week/week395"
-	"time"
 )
 
 func main() {
@@ -192,8 +191,7 @@ func main() {
 
 	middle.GarbageCollection([]string{"G", "P", "GP", "GG"}, []int{2, 4, 3})
 
-	currentTime1 := time.Now()
 	dweek130.MinimumSubstringsInPartitionII("fabccddg")
-	currentTime2 := time.Now()
-	fmt.Printf("%v \n", currentTime2.Sub(currentTime1))
+
+	lcr.Partition("google")
 }
