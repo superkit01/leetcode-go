@@ -194,4 +194,5 @@ func main() {
 	dweek130.MinimumSubstringsInPartitionII("fabccddg")
 
 	lcr.Partition("google")
+	lcr.GenerateParenthesis(3)
 }
