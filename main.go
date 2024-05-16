@@ -196,5 +196,6 @@ func main() {
 	lcr.Partition("google")
 	lcr.GenerateParenthesis(3)
 
-	middle.NumberOfWeeks([]int{5,7,5,7,9,7})
+	middle.NumberOfWeeks([]int{5, 7, 5, 7, 9, 7})
+	lcr.FindMinDifference([]string{"00:00", "23:59", "00:00"})
 }
