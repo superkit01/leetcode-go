@@ -216,4 +216,25 @@ func main() {
 		{0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0},
 		{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}})
 
+	lcr.PathTarget(
+		&lcr.TreeNode{
+			Val: 5,
+			Left: &lcr.TreeNode{
+				Val: 4,
+				Left: &lcr.TreeNode{
+					Val:   11,
+					Left:  &lcr.TreeNode{Val: 7},
+					Right: &lcr.TreeNode{Val: 2},
+				}},
+			Right: &lcr.TreeNode{
+				Val:  8,
+				Left: &lcr.TreeNode{Val: 13},
+				Right: &lcr.TreeNode{
+					Val:   4,
+					Left:  &lcr.TreeNode{Val: 5},
+					Right: &lcr.TreeNode{Val: 1},
+				}},
+		},
+		22)
+
 }
