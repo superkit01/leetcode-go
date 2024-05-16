@@ -195,4 +195,6 @@ func main() {
 
 	lcr.Partition("google")
 	lcr.GenerateParenthesis(3)
+
+	middle.NumberOfWeeks([]int{5,7,5,7,9,7})
 }
