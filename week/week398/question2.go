@@ -12,12 +12,10 @@ func isArraySpecialII(nums []int, queries [][]int) []bool {
 			}
 		}
 	}
-	ans := []bool{}
-	for _, v := range queries {
+	ans := make([]bool, len(queries))
+	for i, v := range queries {
 		if v[1]-v[0]+1 <= dp[v[1]] {
-			ans = append(ans, true)
-		} else {
-			ans = append(ans, false)
+			ans[i] = true
 		}
 	}
 	return ans
