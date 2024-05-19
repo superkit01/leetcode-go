@@ -13,6 +13,7 @@ import (
 	"leetcode-go/week/week393"
 	"leetcode-go/week/week394"
 	"leetcode-go/week/week395"
+	"leetcode-go/week/week398"
 )
 
 func main() {
@@ -237,4 +238,5 @@ func main() {
 		},
 		22)
 
+	week398.SumDigitDifferences([]int{13, 23, 12})
 }
