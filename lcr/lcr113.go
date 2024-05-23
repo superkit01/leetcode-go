@@ -19,19 +19,15 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
 		}
 	}
 	i := 0
-
 	for i < len(ans) {
-		for _, v := range ans {
-			for _, k := range graph[v] {
-				inDegree[k]--
-				if inDegree[k] == 0 {
-					ans = append(ans, k)
-				}
+		for _, k := range graph[ans[i]] {
+			inDegree[k]--
+			if inDegree[k] == 0 {
+				ans = append(ans, k)
 			}
-			i++
 		}
+		i++
 	}
-
 	if len(ans) != numCourses {
 		return []int{}
 	}
