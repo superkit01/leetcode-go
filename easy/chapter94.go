@@ -30,9 +30,3 @@ func digui(root *TreeNode, result *[]int) {
 	digui(root.Right, result)
 }
 
-//
-//func main(){
-//	root:=TreeNode{1,&TreeNode{2,&TreeNode{3,nil,nil},&TreeNode{4,nil,nil}},&TreeNode{2,nil,nil}}
-//	result:=inorderTraversal(&root)
-//	fmt.Println(result)
-//}

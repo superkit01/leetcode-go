@@ -33,7 +33,3 @@ func dp2(restM int, restN int, cache map[int]map[int]int) int {
 	return result
 }
 
-//func main() {
-//
-//	fmt.Println(uniquePaths(51, 9))
-//}

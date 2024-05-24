@@ -29,7 +29,3 @@ func buildTree(nums []int, L int, R int) *TreeNode {
 	return root
 }
 
-//func main() {
-//	root := sortedArrayToBST([]int{0, 1, 2, 3, 4, 5})
-//	fmt.Println("%v", root)
-//}

@@ -1,10 +1,5 @@
 package easy
 
-//import "fmt"
-//
-//func main() {
-//	fmt.Println(lengthOfLastWord("Hello World"))
-//}
 
 func lengthOfLastWord(s string) int {
 	flag := false

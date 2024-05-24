@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leetcode-go/easy"
 	"leetcode-go/hard"
 	"leetcode-go/lcp"
@@ -20,7 +19,7 @@ func main() {
 
 	week336.BeautifulSubarrays([]int{4, 3, 1, 2, 4})
 
-	fmt.Print(easy.MinNumberOfHours(5, 1, []int{1, 3, 3}, []int{1, 3, 7}))
+	easy.MinNumberOfHours(5, 1, []int{1, 3, 3}, []int{1, 3, 7})
 
 	middle.MaximalNetworkRank(4,
 		[][]int{{0, 1}, {0, 3}, {1, 2}, {1, 3}})
@@ -147,7 +146,7 @@ func main() {
 
 	middle.Divide2(-1021989372, -82778243)
 	week393.FindLatestTime("?0:40")
-	fmt.Printf("%v \n", middle.CombinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
+	middle.CombinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8)
 	week394.MinimumOperations([][]int{{0, 6, 2}, {9, 0, 9}, {4, 9, 6}})
 
 	middle.MaxSatisfied([]int{10, 1, 7}, []int{0, 0, 0}, 2)
@@ -239,4 +238,6 @@ func main() {
 		22)
 
 	week398.SumDigitDifferences([]int{13, 23, 12})
+
+	middle.MostCompetitive([]int{2, 4, 3, 3, 5, 4, 9, 6}, 4)
 }

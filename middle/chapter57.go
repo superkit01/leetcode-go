@@ -37,7 +37,3 @@ func insert(intervals [][]int, newInterval []int) [][]int {
 
 }
 
-//func main() {
-//	intervals := [][]int{{1, 5}}
-//	fmt.Printf("%v \n", insert(intervals, []int{6, 8}))
-//}

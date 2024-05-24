@@ -2,9 +2,6 @@ package easy
 
 import "fmt"
 
-//func main() {
-//	fmt.Println(	addStrings("11","22"))
-//}
 
 func addStrings(num1 string, num2 string) string {
 	len1 := len(num1) - 1

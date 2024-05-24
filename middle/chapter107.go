@@ -46,30 +46,3 @@ func reverse1(result [][]int) [][]int {
 	}
 	return result
 }
-
-// func main() {
-// 	root := &TreeNode{
-// 		Val: 1,
-// 		Left: &TreeNode{
-// 			Val: 2,
-// 			Left: &TreeNode{
-// 				Val: 4,
-// 			},
-// 			Right: &TreeNode{
-// 				Val: 5,
-// 			},
-// 		},
-// 		Right: &TreeNode{
-// 			Val: 3,
-// 			Left: &TreeNode{
-// 				Val: 6,
-// 			},
-// 			Right: &TreeNode{
-// 				Val: 7,
-// 			},
-// 		},
-// 	}
-
-// 	root = nil
-// 	fmt.Printf("%v", levelOrderBottom(root))
-// }

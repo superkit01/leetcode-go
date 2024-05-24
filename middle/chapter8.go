@@ -63,8 +63,3 @@ func myAtoi(s string) int {
 	}
 }
 
-//func main(){
-//	result:=myAtoi("-91283472332")
-//	fmt.Println(result)
-//
-//}

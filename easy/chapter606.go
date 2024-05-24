@@ -36,11 +36,3 @@ func dfs(node *TreeNode) string {
 	return s
 }
 
-//func main() {
-//	root := TreeNode{Val: 1,
-//		Left: &TreeNode{Val: 2,
-//			Left: &TreeNode{Val: 4}},
-//		Right: &TreeNode{Val: 3}}
-//
-//	fmt.Printf("%v \n", tree2str(&root))
-//}

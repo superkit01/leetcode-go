@@ -18,7 +18,3 @@ func mySqrt(x int) int {
 
 	return right
 }
-
-//func main() {
-//	fmt.Printf("%v  \n", mySqrt(16))
-//}

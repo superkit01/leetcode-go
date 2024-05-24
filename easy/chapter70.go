@@ -1,12 +1,5 @@
 package easy
 
-//import "fmt"
-//
-//func main() {
-//
-//	fmt.Println(climbStairs(2))
-//}
-
 var tmp = make(map[int]int)
 
 func climbStairs(n int) int {

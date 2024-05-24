@@ -1,7 +1,6 @@
 package week394
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -25,7 +24,6 @@ func MinimumOperations(grid [][]int) int {
 			dp[i][j] = count
 		}
 	}
-	fmt.Printf("%v \n", dp)
 
 	//对dp 进行二次 dp 求路径和的最小值 （相邻的两列不能变为相同的值）
 	for i := 1; i < len(dp); i++ {
@@ -43,7 +41,6 @@ func MinimumOperations(grid [][]int) int {
 			dp[i][j] = min
 		}
 	}
-	fmt.Printf("%v \n", dp)
 
 	//最后一列取最小值
 	min := math.MaxInt32
