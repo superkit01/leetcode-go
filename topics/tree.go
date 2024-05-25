@@ -1,5 +1,7 @@
 package topics
 
+import "fmt"
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -34,6 +36,51 @@ func postOrder(root *TreeNode, ans *[]int) {
 	preOrder(root.Left, ans)
 	preOrder(root.Right, ans)
 	*ans = append(*ans, root.Val)
+}
+
+//前序遍历  根-左-右 迭代法
+func preOrderWithStack(root *TreeNode) {
+	stack := make([]*TreeNode, 0)
+	stack = append(stack, root)
+	for len(stack) > 0 {
+		pop := stack[len(stack)-1]
+		fmt.Printf("%v ", pop.Val)
+		if pop.Right != nil {
+			stack = append(stack, pop.Right)
+		}
+		if pop.Left != nil {
+			stack = append(stack, pop.Left)
+		}
+	}
+}
+
+//后序遍历  左-右-根  迭代法==> (前序微调【先压栈左子树在压栈右子树】 根-右-左   =>  在利用额外栈进行一次入栈出栈操作)
+func postOrderWithStack(root *TreeNode) {
+	stack := make([]*TreeNode, 0)
+	stack = append(stack, root)
+
+	assistStack := make([]*TreeNode, 0)
+
+	for len(stack) > 0 {
+		pop := stack[len(stack)-1]
+		stack = stack[0 : len(stack)-1]
+		//出栈之后入辅助栈
+		assistStack = append(assistStack, pop)
+
+		if pop.Left != nil {
+			stack = append(stack, pop.Left)
+		}
+
+		if pop.Right != nil {
+			stack = append(stack, pop.Right)
+		}
+	}
+
+	for len(assistStack) > 0 {
+		pop := assistStack[len(stack)-1]
+		fmt.Printf("%v ", pop.Val)
+		assistStack = assistStack[0 : len(assistStack)-1]
+	}
 }
 
 // 层序遍历
