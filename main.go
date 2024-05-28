@@ -7,12 +7,14 @@ import (
 	"leetcode-go/lcr"
 	"leetcode-go/middle"
 	"leetcode-go/week/dweek130"
+	"leetcode-go/week/dweek131"
 	"leetcode-go/week/week336"
 	"leetcode-go/week/week392"
 	"leetcode-go/week/week393"
 	"leetcode-go/week/week394"
 	"leetcode-go/week/week395"
 	"leetcode-go/week/week398"
+	"leetcode-go/week/week399"
 )
 
 func main() {
@@ -240,4 +242,9 @@ func main() {
 	week398.SumDigitDifferences([]int{13, 23, 12})
 
 	middle.MostCompetitive([]int{2, 4, 3, 3, 5, 4, 9, 6}, 4)
+
+	dweek131.QueryResults(4, [][]int{{1, 4}, {2, 5}, {1, 3}, {3, 4}})
+
+	week399.NumberOfPairs([]int{1, 2}, []int{3,2}, 2)
+
 }
