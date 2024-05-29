@@ -247,4 +247,6 @@ func main() {
 
 	week399.NumberOfPairs([]int{1, 2}, []int{3,2}, 2)
 
+	middle.MaximumLength("abcdef")
+
 }
