@@ -8,7 +8,7 @@ func findMissingAndRepeatedValues(grid [][]int) []int {
 
 	for i := range grid {
 		for j := range grid[i] {
-			if cnt[grid[i][j]-1] == true {
+			if cnt[grid[i][j]-1] {
 				ans[0] = grid[i][j]
 			}
 			cnt[grid[i][j]-1] = true
