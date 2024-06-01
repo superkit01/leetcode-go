@@ -249,4 +249,6 @@ func main() {
 
 	middle.MaximumLength("abcdef")
 
+	hard.CherryPickupII([][]int{{0,1,-1},{1,0,-1},{1,1,1}})
+
 }
