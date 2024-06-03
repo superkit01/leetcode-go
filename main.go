@@ -251,4 +251,6 @@ func main() {
 
 	hard.CherryPickupII([][]int{{0,1,-1},{1,0,-1},{1,1,1}})
 
+	easy.DistributeCandies(10,3)
+
 }
