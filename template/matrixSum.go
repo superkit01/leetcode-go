@@ -1,4 +1,4 @@
-package topics
+package template
 
 type NumMatrix struct {
 	matrix [][]int

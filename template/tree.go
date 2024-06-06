@@ -1,4 +1,4 @@
-package topics
+package template
 
 import "fmt"
 
@@ -82,6 +82,28 @@ func postOrderWithStack(root *TreeNode) {
 		assistStack = assistStack[0 : len(assistStack)-1]
 	}
 }
+
+//中序遍历  左-根-右  迭代法
+func inOrderWithStack(root *TreeNode) {
+	// stack := make([]*TreeNode, 0)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 层序遍历
 func levelOrder(root *TreeNode) {

@@ -1,4 +1,4 @@
-package topics
+package template
 
 type S struct {
 	Key   int

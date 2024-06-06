@@ -1,13 +1,13 @@
 package main
 
 import (
+	"leetcode-go/dweek/dweek130"
+	"leetcode-go/dweek/dweek131"
 	"leetcode-go/easy"
 	"leetcode-go/hard"
 	"leetcode-go/lcp"
 	"leetcode-go/lcr"
 	"leetcode-go/middle"
-	"leetcode-go/week/dweek130"
-	"leetcode-go/week/dweek131"
 	"leetcode-go/week/week336"
 	"leetcode-go/week/week392"
 	"leetcode-go/week/week393"

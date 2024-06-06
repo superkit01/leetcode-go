@@ -1,4 +1,4 @@
-package topics
+package template
 
 /**
  * Definition for singly-linked list.

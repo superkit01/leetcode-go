@@ -1,4 +1,4 @@
-package topics
+package template
 
 type UnionFind struct {
 	n      int

@@ -1,4 +1,4 @@
-package topics
+package template
 
 //最大公约数
 // 10  4
