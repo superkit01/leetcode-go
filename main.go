@@ -252,5 +252,7 @@ func main() {
 	hard.CherryPickupII([][]int{{0,1,-1},{1,0,-1},{1,1,1}})
 
 	easy.DistributeCandies(10,3)
+	
 
+	middle.MaxOperations([]int{3,2,1,2,3,4})
 }
