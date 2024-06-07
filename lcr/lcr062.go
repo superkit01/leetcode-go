@@ -5,9 +5,7 @@ package lcr
 */
 type Trie struct {
 	childrenMap map[byte]*Trie
-	children    []*Trie
 	end         bool
-	value       int
 }
 
 /** Initialize your data structure here. */
@@ -15,9 +13,7 @@ func Constructor() Trie {
 
 	dummy := Trie{
 		childrenMap: make(map[byte]*Trie, 0),
-		children:    make([]*Trie, 0),
 		end:         false,
-		value:       -1,
 	}
 
 	return dummy
@@ -33,13 +29,10 @@ func (this *Trie) Insert(word string) {
 		if _, ok := current.childrenMap[word[i]]; !ok {
 			trie := &Trie{
 				childrenMap: make(map[byte]*Trie, 0),
-				children:    make([]*Trie, 0),
 				end:         false,
-				value:       int(word[i]),
 			}
 
 			current.childrenMap[word[i]] = trie
-			current.children = append(current.children, trie)
 		}
 
 		if i == len(word)-1 {

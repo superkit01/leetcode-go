@@ -245,14 +245,16 @@ func main() {
 
 	dweek131.QueryResults(4, [][]int{{1, 4}, {2, 5}, {1, 3}, {3, 4}})
 
-	week399.NumberOfPairs([]int{1, 2}, []int{3,2}, 2)
+	week399.NumberOfPairs([]int{1, 2}, []int{3, 2}, 2)
 
 	middle.MaximumLength("abcdef")
 
-	hard.CherryPickupII([][]int{{0,1,-1},{1,0,-1},{1,1,1}})
+	hard.CherryPickupII([][]int{{0, 1, -1}, {1, 0, -1}, {1, 1, 1}})
 
-	easy.DistributeCandies(10,3)
-	
+	easy.DistributeCandies(10, 3)
 
-	middle.MaxOperations([]int{3,2,1,2,3,4})
+	middle.MaxOperations([]int{3, 2, 1, 2, 3, 4})
+
+	lcr.FindMaximumXOR([]int{3, 10, 5, 25, 2, 8})
+
 }
