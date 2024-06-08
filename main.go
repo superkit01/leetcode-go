@@ -257,6 +257,6 @@ func main() {
 
 	lcr.FindMaximumXOR([]int{3, 10, 5, 25, 2, 8})
 
-	
+	lcr.RestoreIpAddresses("25525511135")
 
 }
