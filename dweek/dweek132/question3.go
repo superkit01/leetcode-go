@@ -40,8 +40,8 @@ func MaximumLengthII(nums []int, k int) int {
 
 }
 
-//记忆化搜索
-func MaximumLength(nums []int, k int) int {
+func maximumLength(nums []int, k int) int {
+
 	cache := make(map[[3]int]int, 0)
 
 	var dfs func(index int, preValue int, diffCnt int) int
@@ -62,25 +62,68 @@ func MaximumLength(nums []int, k int) int {
 		value := 0
 		//选择index位置
 		if preValue == -1 { //初始值
+			//选择index位置 （初始位置时 ums[index] 与 preValue不想等也不 +1 ）
 			value = dfs(index+1, nums[index], diffCnt) + 1
-		} else {
-			if nums[index] != preValue {
-				value = max(dfs(index+1, nums[index], diffCnt+1)+1, value)
-			} else {
-				value = max(dfs(index+1, nums[index], diffCnt)+1, value)
-			}
+			//不选择index位置
+			value = max(dfs(index+1, preValue, diffCnt), value)
+
+			cache[[3]int{index, preValue, diffCnt}] = value
+			return value
 		}
 
-		//不选择index位置
-		value = max(dfs(index+1, preValue, diffCnt), value)
+		if nums[index] == preValue {
+			//选择index位置
+			value = dfs(index+1, nums[index], diffCnt) + 1
+		} else {
+			//选择index位置
+			value = dfs(index+1, nums[index], diffCnt+1) + 1
+			//不选择index位置
+			value = max(dfs(index+1, preValue, diffCnt), value)
+		}
 
 		cache[[3]int{index, preValue, diffCnt}] = value
 		return value
 
 	}
-
 	return dfs(0, -1, 0)
+}
 
+//记忆化搜索
+func MaximumLength(nums []int, k int) int {
+	cache := make(map[[3]int]int, 0)
+
+	var dfs func(index int, preValue int, diffCnt int) int
+
+	dfs = func(index int, preValue int, diffCnt int) int {
+		if diffCnt > k {
+			return math.MinInt32
+		}
+
+		if index >= len(nums) {
+			return 0
+		}
+
+		if v, ok := cache[[3]int{index, preValue, diffCnt}]; ok {
+			return v
+		}
+
+		value := 0
+
+		if nums[index] == preValue {
+			//选择index位置
+			value = dfs(index+1, nums[index], diffCnt) + 1
+		} else {
+			//选择index位置
+			value = dfs(index+1, nums[index], diffCnt+1) + 1
+			//不选择index位置
+			value = max(dfs(index+1, preValue, diffCnt), value)
+		}
+
+		cache[[3]int{index, preValue, diffCnt}] = value
+		return value
+
+	}
+	return dfs(0, -1, -1)
 }
 
 func max(i, j int) int {
