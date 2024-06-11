@@ -262,4 +262,6 @@ func main() {
 
 	dweek132.MaximumLengthII([]int{1, 2, 3, 4, 5, 1}, 0)
 
+	lcr.GoodsOrder("agew")
+
 }
