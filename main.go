@@ -3,6 +3,7 @@ package main
 import (
 	"leetcode-go/dweek/dweek130"
 	"leetcode-go/dweek/dweek131"
+	"leetcode-go/dweek/dweek132"
 	"leetcode-go/easy"
 	"leetcode-go/hard"
 	"leetcode-go/lcp"
@@ -256,5 +257,9 @@ func main() {
 	middle.MaxOperations([]int{3, 2, 1, 2, 3, 4})
 
 	lcr.FindMaximumXOR([]int{3, 10, 5, 25, 2, 8})
+
+	lcr.RestoreIpAddresses("25525511135")
+
+	dweek132.MaximumLengthII([]int{1, 2, 3, 4, 5, 1}, 0)
 
 }
