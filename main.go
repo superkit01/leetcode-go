@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"leetcode-go/dweek/dweek130"
 	"leetcode-go/dweek/dweek131"
 	"leetcode-go/dweek/dweek132"
@@ -9,6 +10,7 @@ import (
 	"leetcode-go/lcp"
 	"leetcode-go/lcr"
 	"leetcode-go/middle"
+	"leetcode-go/template"
 	"leetcode-go/week/week336"
 	"leetcode-go/week/week392"
 	"leetcode-go/week/week393"
@@ -263,5 +265,9 @@ func main() {
 	dweek132.MaximumLengthII([]int{1, 2, 3, 4, 5, 1}, 0)
 
 	lcr.GoodsOrder("agew")
+
+	nums := []int{1, 2, 5, 6, 3}
+	template.InsertSort(nums)
+	fmt.Printf("%v \n", nums)
 
 }
