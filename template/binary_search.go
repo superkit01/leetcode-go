@@ -20,7 +20,7 @@ func UpperBound(nums []int, target int) int {
 	return ans
 }
 
-// 7 大于等于7 的最大值
+// 7 大于等于7 的最小值
 func LowerBound(nums []int, target int) int {
 	l := 0
 	r := len(nums) - 1
