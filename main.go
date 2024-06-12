@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leetcode-go/dweek/dweek130"
 	"leetcode-go/dweek/dweek131"
 	"leetcode-go/dweek/dweek132"
@@ -268,6 +267,6 @@ func main() {
 
 	nums := []int{1, 2, 5, 6, 3}
 	template.InsertSort(nums)
-	fmt.Printf("%v \n", nums)
 
+	template.LowerBound([]int{1, 2, 2, 3, 4, 7, 7, 7, 7, 7, 8, 9, 10, 10, 10, 18}, 7)
 }

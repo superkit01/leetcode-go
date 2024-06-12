@@ -85,25 +85,25 @@ func postOrderWithStack(root *TreeNode) {
 
 //中序遍历  左-根-右  迭代法
 func inOrderWithStack(root *TreeNode) {
-	// stack := make([]*TreeNode, 0)
+	if root == nil {
+		return
+	}
+
+	queue := make([]*TreeNode, 0)
+
+	for queue != nil || root != nil {
+		if root != nil {
+			queue = append(queue, root.Left)
+			root = root.Left
+			continue
+		}
+		pop := queue[len(queue)-1]
+		queue = queue[0 : len(queue)-1]
+		fmt.Printf("%v ", pop.Val)
+		root = pop.Right
+	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 层序遍历
 func levelOrder(root *TreeNode) {

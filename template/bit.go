@@ -21,3 +21,10 @@ func lastBit0(a int) int {
 	// pos:= math.Log2(float64(^a & (a+1 )))
 	return ^a & (a + 1)
 }
+
+//相反数  0111  1001  取反+1
+func negetive(a int) int {
+	return ^a + 1
+}
+
+

@@ -1,11 +1,8 @@
 package easy
 
-import "fmt"
-
 func DistributeCandies(candies int, num_people int) []int {
 	//  (1+n+ 2*i*n)*n/2
 	turns := binarySeach(candies, num_people)
-	fmt.Printf("%v", turns)
 
 	ans := make([]int, num_people)
 
@@ -14,7 +11,7 @@ func DistributeCandies(candies int, num_people int) []int {
 			ans[i] = (i + 1 + num_people*(turns-1) + i + 1) * turns / 2
 		}
 	}
-	
+
 	start := num_people * (1 + num_people) / 2
 	end := num_people * (1 + num_people + 2*(turns-1)*num_people) / 2
 	remain := candies - (start+end)*turns/2
