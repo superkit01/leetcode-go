@@ -269,4 +269,6 @@ func main() {
 	template.InsertSort(nums)
 
 	template.UpperBound([]int{1, 2, 2, 3, 4, 7, 7, 7, 7, 7, 8, 9, 10, 10, 10, 18}, 7)
+
+	hard.FindMaximumElegance([][]int{{3, 2}, {5, 1}, {10, 1}}, 2)
 }
