@@ -17,6 +17,7 @@ import (
 	"leetcode-go/week/week395"
 	"leetcode-go/week/week398"
 	"leetcode-go/week/week399"
+	"leetcode-go/week/week402"
 )
 
 func main() {
@@ -273,4 +274,6 @@ func main() {
 	hard.FindMaximumElegance([][]int{{3, 2}, {5, 1}, {10, 1}}, 2)
 
 	lcr.IsBipartiteII([][]int{{1, 2, 3}, {0, 2}, {0, 1, 3}, {0, 2}})
+
+	week402.MaximumTotalDamageII([]int{1, 3, 6, 7})
 }
