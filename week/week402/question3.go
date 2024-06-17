@@ -6,7 +6,7 @@ import (
 	"golang.org/x/exp/slices"
 )
 
-//TLE
+// TLE
 func maximumTotalDamage(power []int) int64 {
 	damage := map[int]int64{}
 	for _, v := range power {
@@ -73,20 +73,13 @@ func MaximumTotalDamageII(power []int) int64 {
 			return int64(0)
 		}
 
-		value := dfs(index - 1)
-
 		j := index
-		for i := index; i >= 0; i-- {
-			if power[i]+2 < power[index] {
-				j = i
-				break
-			}
+
+		for j >= 0 && power[j]+2 >= power[index] {
+			j--
 		}
-		if j == index { //没找到
-			value = max(value, damage[power[index]])
-		} else {
-			value = max(value, dfs(j)+damage[power[index]])
-		}
+
+		value := max(dfs(index-1), dfs(j)+damage[power[index]])
 
 		memo[index] = value
 		return value
