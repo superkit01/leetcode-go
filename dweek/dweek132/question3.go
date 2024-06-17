@@ -40,54 +40,6 @@ func MaximumLengthII(nums []int, k int) int {
 
 }
 
-func maximumLength(nums []int, k int) int {
-
-	cache := make(map[[3]int]int, 0)
-
-	var dfs func(index int, preValue int, diffCnt int) int
-
-	dfs = func(index int, preValue int, diffCnt int) int {
-		if v, ok := cache[[3]int{index, preValue, diffCnt}]; ok {
-			return v
-		}
-		if diffCnt > k {
-			cache[[3]int{index, preValue, diffCnt}] = math.MinInt32
-			return math.MinInt32
-		}
-
-		if index >= len(nums) {
-			cache[[3]int{index, preValue, diffCnt}] = 0
-			return 0
-		}
-		value := 0
-		//选择index位置
-		if preValue == -1 { //初始值
-			//选择index位置 （初始位置时 ums[index] 与 preValue不想等也不 +1 ）
-			value = dfs(index+1, nums[index], diffCnt) + 1
-			//不选择index位置
-			value = max(dfs(index+1, preValue, diffCnt), value)
-
-			cache[[3]int{index, preValue, diffCnt}] = value
-			return value
-		}
-
-		if nums[index] == preValue {
-			//选择index位置
-			value = dfs(index+1, nums[index], diffCnt) + 1
-		} else {
-			//选择index位置
-			value = dfs(index+1, nums[index], diffCnt+1) + 1
-			//不选择index位置
-			value = max(dfs(index+1, preValue, diffCnt), value)
-		}
-
-		cache[[3]int{index, preValue, diffCnt}] = value
-		return value
-
-	}
-	return dfs(0, -1, 0)
-}
-
 //记忆化搜索
 func MaximumLength(nums []int, k int) int {
 	cache := make(map[[3]int]int, 0)
@@ -131,4 +83,45 @@ func max(i, j int) int {
 		return j
 	}
 	return i
+}
+
+
+//DFS
+func maximumLengthII(nums []int, k int) int {
+
+	cache := make(map[[2]int]int, 0)
+
+	//以index结尾 相邻不同数量为cnt 的最长好序列
+	var dfs func(index int, diffCnt int) int
+	dfs = func(index int, diffCnt int) int {
+
+		if v, ok := cache[[2]int{index, diffCnt}]; ok {
+			return v
+		}
+
+		if index == 0 {
+			return 0
+		}
+
+		value := 0
+		for j := index - 1; j >= 0; j-- {
+			if nums[j] == nums[index] {
+				value = max(value, dfs(j, diffCnt)+1)
+			} else {
+				if diffCnt-1 >= 0 {
+					value = max(value, dfs(j, diffCnt-1)+1)
+				}
+			}
+		}
+
+		cache[[2]int{index, diffCnt}] = value
+		return value
+
+	}
+
+	ans := 0
+	for i := 0; i < len(nums); i++ {
+		ans = max(ans, dfs(i, k))
+	}
+	return ans + 1
 }
