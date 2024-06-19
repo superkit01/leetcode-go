@@ -1,7 +1,7 @@
 package template
 
 //s1是否存在s2的子串
-func kmp(s1 string, s2 string) bool {
+func KMP(s1 string, s2 string) bool {
 	if len(s1) < len(s2) {
 		return false
 	}
@@ -31,7 +31,6 @@ func kmp(s1 string, s2 string) bool {
 		}
 		pos2 = next[pos2]
 	}
-
 }
 
 // Next[index]:不含当前位置,不含整体 的最长公共前后缀  0~index-1

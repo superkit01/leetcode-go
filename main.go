@@ -276,4 +276,7 @@ func main() {
 	lcr.IsBipartiteII([][]int{{1, 2, 3}, {0, 2}, {0, 1, 3}, {0, 2}})
 
 	week402.MaximumTotalDamageII([]int{1, 3, 6, 7})
+
+	template.KMP("ababab", "c")
+
 }
