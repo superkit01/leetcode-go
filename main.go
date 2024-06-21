@@ -279,4 +279,6 @@ func main() {
 
 	template.KMP("ababab", "c")
 
+	easy.CountBeautifulPairs([]int{1799, 259, 1453, 374, 1854, 2212, 2104, 2221})
+
 }
