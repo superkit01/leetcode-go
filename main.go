@@ -18,6 +18,7 @@ import (
 	"leetcode-go/week/week398"
 	"leetcode-go/week/week399"
 	"leetcode-go/week/week402"
+	"fmt"
 )
 
 func main() {
@@ -282,5 +283,7 @@ func main() {
 	easy.CountBeautifulPairs([]int{1799, 259, 1453, 374, 1854, 2212, 2104, 2221})
 
 	lcr.Permute([]int{1, 2, 3})
+
+	fmt.Printf("%+v  \n",template.Crt([][]int{{3,2},{5,3},{7,2}}))
 
 }
