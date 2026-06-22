@@ -40,10 +40,3 @@ func maxTotalReward(rewardValues []int) int {
 	return dfs(0, 0)
 
 }
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	}
-	return j
-}

@@ -45,12 +45,6 @@ func maximumTotalDamage(power []int) int64 {
 
 }
 
-func max(i, j int64) int64 {
-	if i > j {
-		return i
-	}
-	return j
-}
 
 func MaximumTotalDamageII(power []int) int64 {
 	damage := map[int]int64{}

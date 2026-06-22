@@ -78,14 +78,6 @@ func MaximumLength(nums []int, k int) int {
 	return dfs(0, -1, -1)
 }
 
-func max(i, j int) int {
-	if i < j {
-		return j
-	}
-	return i
-}
-
-
 //DFS
 func maximumLengthII(nums []int, k int) int {
 

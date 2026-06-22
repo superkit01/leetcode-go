@@ -94,10 +94,3 @@ func dfs2(grid []string, mark *[][]int, i, j, m, n int) int {
 	return ans
 }
 
-func max(i, j int) int {
-	if i > j {
-		return i
-	} else {
-		return j
-	}
-}

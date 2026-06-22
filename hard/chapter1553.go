@@ -20,9 +20,3 @@ func dfs(n int, cache *map[int]int) int {
 
 }
 
-func min(i, j int) int {
-	if i < j {
-		return i
-	}
-	return j
-}

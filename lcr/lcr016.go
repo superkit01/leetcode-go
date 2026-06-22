@@ -34,13 +34,6 @@ func LengthOfLongestSubstring(s string) int {
 
 }
 
-func min(i, j int) int {
-	if i < j {
-		return i
-	} else {
-		return j
-	}
-}
 
 //双指针
 func LengthOfLongestSubstringII(s string) int {

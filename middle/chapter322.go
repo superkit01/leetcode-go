@@ -78,10 +78,3 @@ func coinChangeII(coins []int, amount int) int {
 	}
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
-	} else {
-		return b
-	}
-}

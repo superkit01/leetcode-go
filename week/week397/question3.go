@@ -45,9 +45,3 @@ func maxScore(grid [][]int) int {
 
 }
 
-func min(i, j int) int {
-	if i < j {
-		return i
-	}
-	return j
-}
