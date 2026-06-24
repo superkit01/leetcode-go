@@ -46,12 +46,6 @@ func maxScore(nums []int, x int) int64 {
 	return dp[len(dp)]
 }
 
-func max[T int|int64](i, j T) T {
-	if i > j {
-		return i
-	}
-	return j
-}
 
 func maxScoreII(nums []int, x int) int64 {
 	dp := make([][2]int64, len(nums))

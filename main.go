@@ -286,4 +286,6 @@ func main() {
 
 	fmt.Printf("%+v  \n",template.Crt([][]int{{3,2},{5,3},{7,2}}))
 
+	middle.AngleClock(12,30)
+
 }
