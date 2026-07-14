@@ -288,4 +288,6 @@ func main() {
 
 	middle.AngleClock(12,30)
 
+	lcr.FindKthNumber(12)
+
 }
