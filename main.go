@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"leetcode-go/dweek/dweek130"
 	"leetcode-go/dweek/dweek131"
 	"leetcode-go/dweek/dweek132"
@@ -18,7 +19,6 @@ import (
 	"leetcode-go/week/week398"
 	"leetcode-go/week/week399"
 	"leetcode-go/week/week402"
-	"fmt"
 )
 
 func main() {
@@ -284,10 +284,11 @@ func main() {
 
 	lcr.Permute([]int{1, 2, 3})
 
-	fmt.Printf("%+v  \n",template.Crt([][]int{{3,2},{5,3},{7,2}}))
+	fmt.Printf("%+v  \n", template.Crt([][]int{{3, 2}, {5, 3}, {7, 2}}))
 
-	middle.AngleClock(12,30)
+	middle.AngleClock(12, 30)
 
 	lcr.FindKthNumber(12)
 
+	middle.SingleNumber3([]int{-2, -2, 1, 1, 4, 1, 4, 4, -4, -2})
 }
