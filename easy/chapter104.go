@@ -1,5 +1,6 @@
 package easy
 
+// bfs
 func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
@@ -24,5 +25,14 @@ func maxDepth(root *TreeNode) int {
 	}
 
 	return length
+
+}
+
+// dfs
+func maxDepth2(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+	return max(maxDepth2(root.Left), maxDepth2(root.Right)) + 1
 
 }
