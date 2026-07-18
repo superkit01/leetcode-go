@@ -16,8 +16,6 @@ func singleNonDuplicate(nums []int) int {
 		} else {
 			tmp = nums[i] ^ tmp
 		}
-		return tmp
-
 	}
 
 	return tmp
