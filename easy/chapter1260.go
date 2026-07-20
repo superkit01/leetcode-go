@@ -1,40 +1,30 @@
 package easy
 
 func shiftGrid(grid [][]int, k int) [][]int {
+	m, n := len(grid), len(grid[0])
 
-	m := len(grid)
-	n := len(grid[0])
-
-	temp := make([]int, 0)
-	for i := 0; i < m; i++ {
-		temp = append(temp, grid[i]...)
+	k = k % (m * n)
+	if k == 0 {
+		return grid
 	}
-	k = k % len(temp)
 
-	newTemp := make([]int, len(temp))
-	for i, v := range temp {
-		index := i + k
-		if index > len(temp)-1 {
-			index = index - len(temp)
+	temp := make([]int, m*n*2)
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			temp[i*n+j] = grid[i][j]
 		}
-		newTemp[index] = v
+	}
+	for i := 0; i < m*n; i++ {
+		temp[i+m*n] = temp[i]
 	}
 
-	result := make([][]int, 0)
 	for i := 0; i < m; i++ {
-		result = append(result, make([]int, n))
+		for j := 0; j < n; j++ {
+			grid[i][j] = temp[m*n-k+i*n+j]
+		}
 	}
 
-	for i, v := range newTemp {
-		r := i / n
-		c := i - r*n
-		result[r][c] = v
-	}
-
-	return result
+	return grid
 
 }
 
-// func main() {
-// shiftGrid([][]int{{1}}, 100)
-// }
