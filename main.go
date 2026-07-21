@@ -293,4 +293,28 @@ func main() {
 	middle.SingleNumber3([]int{-2, -2, 1, 1, 4, 1, 4, 4, -4, -2})
 
 	middle.MaxActiveSectionsAfterTrade("01")
+
+	lcr.AddTwoNumbers(
+		&lcr.ListNode{
+			Val: 7,
+			Next: &lcr.ListNode{
+				Val: 2,
+				Next: &lcr.ListNode{
+					Val: 4,
+					Next: &lcr.ListNode{
+						Val:  3,
+						Next: nil,
+					},
+				},
+			},
+		},
+		&lcr.ListNode{
+			Val: 5,
+			Next: &lcr.ListNode{
+				Val: 6,
+				Next: &lcr.ListNode{
+					Val: 4,
+				},
+			},
+		})
 }
