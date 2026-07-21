@@ -291,4 +291,6 @@ func main() {
 	lcr.FindKthNumber(12)
 
 	middle.SingleNumber3([]int{-2, -2, 1, 1, 4, 1, 4, 4, -4, -2})
+
+	middle.MaxActiveSectionsAfterTrade("01")
 }
