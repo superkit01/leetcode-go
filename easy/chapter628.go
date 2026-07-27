@@ -1,7 +1,6 @@
 package easy
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -11,7 +10,7 @@ func MaximumProduct(nums []int) int {
 	mx := []int{math.MinInt, math.MinInt, math.MinInt}
 
 	for _, v := range nums {
-		
+
 		if v > mx[0] {
 			mx[2] = mx[1]
 			mx[1] = mx[0]
