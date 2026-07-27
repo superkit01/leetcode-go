@@ -1,6 +1,6 @@
 package easy
 
-func maxProduct(nums []int) int {
+func maxProduct1(nums []int) int {
 	m := []int{0, 0}
 	for _, v := range nums {
 		if v > m[0] {

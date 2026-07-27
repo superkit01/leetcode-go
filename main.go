@@ -317,4 +317,6 @@ func main() {
 				},
 			},
 		})
+
+	easy.MaximumProduct([]int{-1, -2, 1})
 }
