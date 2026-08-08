@@ -321,4 +321,6 @@ func main() {
 	easy.MaximumProduct([]int{-1, -2, 1})
 
 	lcr.CountTarget([]int{2, 2, 3, 4, 4, 4, 5, 6, 6, 8}, 4)
+
+	lcr.FileCombination(12)
 }
