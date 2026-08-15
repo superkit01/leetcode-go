@@ -1,6 +1,6 @@
 package lcr 
 
-func trainingPlan(actions []int) int {
+func trainingPlanVI(actions []int) int {
     bit:=[32]int{}
     for _,v:=range actions{
         i:=0
