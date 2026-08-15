@@ -8,7 +8,7 @@ package template
  * }
  */
 
-//递归
+// 递归
 func reverseList(head *ListNode) *ListNode {
 
 	if head == nil || head.Next == nil {
@@ -21,7 +21,7 @@ func reverseList(head *ListNode) *ListNode {
 	return newHead
 }
 
-//迭代
+// 迭代
 func reverseListII(head *ListNode) *ListNode {
 
 	var pre *ListNode
