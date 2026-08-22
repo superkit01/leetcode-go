@@ -323,4 +323,30 @@ func main() {
 	lcr.CountTarget([]int{2, 2, 3, 4, 4, 4, 5, 6, 6, 8}, 4)
 
 	lcr.FileCombination(12)
+
+
+	lcr.TrainningPlan(
+			&lcr.ListNode{
+				Val: 1, 
+				Next: &lcr.ListNode{
+					Val: 2, 
+					Next: &lcr.ListNode{
+						Val: 3, 
+						Next:nil,
+					},
+				},
+			},
+			&lcr.ListNode{
+				Val: 1, 
+				Next: &lcr.ListNode{
+					Val: 2, 
+					Next: &lcr.ListNode{
+						Val: 3, 
+						Next:nil,
+					},
+				},
+			},
+					
+	)
+
 }
