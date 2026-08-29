@@ -324,29 +324,29 @@ func main() {
 
 	lcr.FileCombination(12)
 
-
 	lcr.TrainningPlan(
-			&lcr.ListNode{
-				Val: 1, 
+		&lcr.ListNode{
+			Val: 1,
+			Next: &lcr.ListNode{
+				Val: 2,
 				Next: &lcr.ListNode{
-					Val: 2, 
-					Next: &lcr.ListNode{
-						Val: 3, 
-						Next:nil,
-					},
+					Val:  3,
+					Next: nil,
 				},
 			},
-			&lcr.ListNode{
-				Val: 1, 
+		},
+		&lcr.ListNode{
+			Val: 1,
+			Next: &lcr.ListNode{
+				Val: 2,
 				Next: &lcr.ListNode{
-					Val: 2, 
-					Next: &lcr.ListNode{
-						Val: 3, 
-						Next:nil,
-					},
+					Val:  3,
+					Next: nil,
 				},
 			},
-					
+		},
 	)
+
+	lcr.SpiralArray([][]int{{2, 3}})
 
 }
