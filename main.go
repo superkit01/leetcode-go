@@ -349,4 +349,12 @@ func main() {
 
 	lcr.SpiralArray([][]int{{2, 3}})
 
+	mf := lcr.Constructor160()
+	mf.AddNum(1)
+	mf.AddNum(2)
+	v := mf.FindMedian()
+	fmt.Println(v)
+	mf.AddNum(3)
+
+	
 }
